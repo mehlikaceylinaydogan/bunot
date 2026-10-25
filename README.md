@@ -2,7 +2,7 @@
 
 Boğaziçi Üniversitesi öğrencileri için ders notu paylaşım sitesi.
 
-- **1472 ders**, tek arama kutusu (`tr109`, `TR 109`, `tr-109` hepsi bulunur)
+- **1472 ders**, tek arama kutusu
 - **30 lisans programı** için 8 dönemlik gerçek müfredat, giriş yılına göre
 - Üyelik sadece `@boun.edu.tr` ve `@std.bogazici.edu.tr` adresleriyle
 - Not yükleme, indirme, silme; tür (Midterm, Final, Quiz…) ve dönem bilgisi
