@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bunot — Boğaziçi ders notları</title>
+<link rel="preload" href="fontlar/dmsans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontlar/lora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fontlar.css">
+<link rel="stylesheet" href="stil.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<script>
+  /* tema, sayfa çizilmeden önce uygulanır: ekran bir an beyazlamaz */
+  (function () {
+    var t = null;
+    try {
+      var q = new URLSearchParams(location.search).get("tema");
+      if (q === "koyu" || q === "acik") t = q;
+      else t = localStorage.getItem("bunot-tema");
+      if (t !== "koyu" && t !== "acik") {
+        t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "koyu" : "acik";
+      }
+    } catch (e) { t = "acik"; }
+    document.documentElement.setAttribute("data-tema", t);
+  })();
+</script>
+</head>
+<body>
+
+<header class="ust">
+  <a class="marka" href="#/">
+    <span class="marka-nokta">b</span>
+    <span class="marka-yazi">bunot<small>Boğaziçi ders notları</small></span>
+  </a>
+
+  <div class="arama-kutu">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M10.5 17a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Zm5 -1.5L21 21"/></svg>
+    <input id="arama" type="search" placeholder="Ders kodu, ders adı veya not başlığı ara… (ör. SOC 101)" autocomplete="off">
+  </div>
+
+  <div class="hesap" id="hesap"></div>
+
+  <button class="tema-dugme" id="tema-dugme" type="button" title="Koyu moda geç" aria-label="Koyu moda geç">
+    <svg class="gunes-ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.2"/>
+      <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/>
+    </svg>
+    <svg class="ay-ikon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20.2 14.4A8.2 8.2 0 0 1 9.6 3.8a8.4 8.4 0 1 0 10.6 10.6Z"/>
+    </svg>
+  </button>
+</header>
+
+<main class="govde">
+  <aside class="yan" id="yan">
+    <div class="yan-ic">
+      <div class="yan-baslik">Bölümler</div>
+      <input class="yan-arama" id="bolum-arama" type="search" placeholder="Bölüm ara…">
+      <label class="yan-secim" title="500 ve üstü numaralı dersler yüksek lisans dersleridir">
+        <input type="checkbox" id="lisans-filtre" checked>
+        Sadece lisans dersleri
+      </label>
+      <nav class="bolum-listesi" id="bolum-listesi"></nav>
+    </div>
+    <button class="yan-tutamac" id="yan-tutamac" type="button"
+            aria-label="Bölüm listesini aç" aria-expanded="false" aria-controls="yan">
+      <span class="yan-tutamac-ok" aria-hidden="true">›</span>
+      <span class="yan-tutamac-yazi">Bölümler</span>
+    </button>
+  </aside>
+
+  <section class="icerik" id="icerik">
+    <div class="yukleniyor">Ders listesi yükleniyor…</div>
+  </section>
+</main>
+
+<!-- Giriş / kayıt -->
+<div class="perde" id="perde-giris" hidden>
+  <div class="kutu">
+    <button class="kapat" data-kapat="perde-giris">×</button>
+    <h2 id="giris-baslik">Giriş yap</h2>
+    <p class="ipucu" id="giris-ipucu">bunot'a sadece Boğaziçi e-postasıyla girilir: <b>@boun.edu.tr</b> veya <b>@std.bogazici.edu.tr</b></p>
+    <form id="giris-form" class="form">
+      <label class="alan gizli" id="ad-alani">Ad Soyad
+        <input id="giris-ad" type="text" placeholder="ör. Ceylin Yılmaz" autocomplete="name">
+      </label>
+      <label class="alan gizli" id="bolum-alani">Bölümün
+        <select id="giris-bolum"><option value="">Bölüm seç…</option></select>
+      </label>
+      <label class="alan gizli" id="yil-alani">Giriş yılın
+        <select id="giris-yil"><option value="">Yıl seç…</option></select>
+      </label>
+      <label class="alan">Boğaziçi e-postan
+        <input id="giris-eposta" type="email" placeholder="ad.soyad@boun.edu.tr" autocomplete="email" required>
+      </label>
+      <label class="alan gizli" id="kayitli-ad-alani">Kayıtlı adın
+        <input id="giris-kayitli-ad" type="text" placeholder="ör. Ceylin Yılmaz" autocomplete="name">
+      </label>
+      <label class="alan">Şifre
+        <input id="giris-sifre" type="password" placeholder="en az 6 karakter" autocomplete="current-password" required>
+        <button type="button" class="goz" data-goz="giris-sifre">şifreyi göster</button>
+      </label>
+      <label class="alan gizli" id="yeni-sifre-alani">Yeni şifre
+        <input id="giris-yeni-sifre" type="password" placeholder="en az 6 karakter" autocomplete="new-password">
+        <button type="button" class="goz" data-goz="giris-yeni-sifre">şifreyi göster</button>
+      </label>
+      <div class="uyari" id="giris-uyari"></div>
+      <button class="dugme dolu" type="submit" id="giris-gonder">Giriş yap</button>
+    </form>
+    <p class="alt-yazi">
+      <span id="giris-soru">Hesabın yok mu?</span>
+      <a href="#" id="giris-degistir">Kayıt ol</a>
+    </p>
+    <p class="alt-yazi ikinci" id="sifir-link-satir">
+      <a href="#" id="sifir-link">Şifremi unuttum</a>
+    </p>
+  </div>
+</div>
+
+<!-- Şifre değiştir -->
+<div class="perde" id="perde-sifre" hidden>
+  <div class="kutu">
+    <button class="kapat" data-kapat="perde-sifre">×</button>
+    <h2>Şifre değiştir</h2>
+    <p class="ipucu">Mevcut şifreni bir kez yaz, sonra yeni şifreni belirle.</p>
+    <form id="sifre-form" class="form">
+      <label class="alan">Mevcut şifren
+        <input id="s-eski" type="password" autocomplete="current-password" required>
+      </label>
+      <label class="alan">Yeni şifre
+        <input id="s-yeni" type="password" placeholder="en az 6 karakter" autocomplete="new-password" required>
+      </label>
+      <label class="alan">Yeni şifre (tekrar)
+        <input id="s-tekrar" type="password" autocomplete="new-password" required>
+      </label>
+      <div class="uyari" id="sifre-uyari"></div>
+      <button class="dugme dolu" type="submit" id="sifre-gonder">Şifremi değiştir</button>
+    </form>
+  </div>
+</div>
+
+<!-- Not yükleme -->
+<div class="perde" id="perde-yukle" hidden>
+  <div class="kutu genis">
+    <button class="kapat" data-kapat="perde-yukle">×</button>
+    <h2>Not yükle</h2>
+    <p class="ipucu">Kendi hazırladığın özetler, çalışma notları, sınav soruları… Hocanın slaytını veya kitabını yükleme.</p>
+    <form id="yukle-form" class="form">
+      <label class="alan">Ders
+        <input id="y-ders" type="text" list="ders-listesi" placeholder="Ders kodu yaz, ör. SOC 101" required>
+        <datalist id="ders-listesi"></datalist>
+      </label>
+      <div class="ikili">
+        <label class="alan">Notun başlığı
+          <input id="y-baslik" type="text" placeholder="ör. SOC 101 2026 Midterm çalışma notları" required>
+        </label>
+        <label class="alan">Tür
+          <select id="y-tur">
+            <option>Midterm</option>
+            <option>Final</option>
+            <option>Quiz</option>
+            <option>Homework</option>
+            <option>Project</option>
+            <option>Summary</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+      <div class="ikili">
+        <label class="alan">Dönem
+          <select id="y-donem"></select>
+        </label>
+        <label class="alan">Dosya
+          <input id="y-dosya" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.txt,.md,.jpg,.jpeg,.png,.zip" required>
+        </label>
+      </div>
+      <label class="alan">Açıklama (isteğe bağlı)
+        <textarea id="y-aciklama" rows="3" placeholder="Neyi kapsıyor, hangi konular var, hoca kim…"></textarea>
+      </label>
+      <div class="uyari" id="yukle-uyari"></div>
+      <button class="dugme dolu" type="submit" id="yukle-gonder">Notu yükle</button>
+    </form>
+  </div>
+</div>
+
+<div class="bildirim" id="bildirim" hidden></div>
+
+<script src="uygulama.js"></script>
+</body>
+</html>

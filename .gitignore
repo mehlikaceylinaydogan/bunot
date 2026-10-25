@@ -1,0 +1,17 @@
+# --- kişisel veriler: repoya girmesin ---
+site/veri/kisiler.json
+site/veri/kisiler.json.onceki
+site/veri/kisiler.json.tmp
+site/veri/notlar.json
+site/veri/notlar.json.onceki
+site/veri/notlar.json.tmp
+site/veri/dosyalar/
+site/yedekler/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- Windows ---
+Thumbs.db
+desktop.ini
