@@ -120,6 +120,54 @@ function boyutYaz(b) {
   return (b / (1024 * 1024)).toFixed(1) + " MB";
 }
 
+/* ---------------------------------------------------------- form denetimi */
+/* Tarayıcının "lütfen bu alanı doldurun" balonu yerine sitenin kendi uyarısı */
+const ALAN_MESAJI = {
+  "giris-ad": "Adını yazmayı unuttun.",
+  "giris-bolum": "Bölümünü seçer misin? Derslerini ona göre göstereceğiz.",
+  "giris-yil": "Giriş yılını seçer misin? Müfredat yıla göre değişiyor.",
+  "giris-eposta": "Boğaziçi e-postanı yazmayı unuttun.",
+  "giris-kayitli-ad": "Hesabına yazdığın adı yazmayı unuttun.",
+  "giris-sifre": "Şifreni yazmayı unuttun.",
+  "giris-yeni-sifre": "Yeni şifreni yazmayı unuttun.",
+  "s-eski": "Mevcut şifreni yazmayı unuttun.",
+  "s-yeni": "Yeni şifreni yazmayı unuttun.",
+  "s-tekrar": "Yeni şifreyi bir kez daha yaz.",
+  "y-ders": "Hangi ders için yüklüyorsun? Ders kodunu yaz (ör. SOC 101).",
+  "y-baslik": "Nota bir başlık ver.",
+  "y-dosya": "Yükleyeceğin dosyayı seçmeyi unuttun.",
+};
+
+function ilkEksik(form) {
+  for (const a of form.querySelectorAll("input, select, textarea")) {
+    if (a.type === "hidden" || a.disabled || a.closest(".gizli")) continue;
+    const bos = a.type === "file" ? !a.files.length : !String(a.value).trim();
+    if (bos) return { alan: a, metin: ALAN_MESAJI[a.id] || "Bu alanı doldurmayı unuttun." };
+    if (a.type === "email" && a.validity && a.validity.typeMismatch) {
+      return { alan: a, metin: "E-posta adresi doğru görünmüyor. ör. ad.soyad@boun.edu.tr" };
+    }
+  }
+  return null;
+}
+
+function alanUyar(form, uyari) {
+  const eksik = ilkEksik(form);
+  if (!eksik) return false;
+  uyari.textContent = eksik.metin;
+  uyari.classList.add("gorunur");
+  eksik.alan.classList.add("hatali");
+  eksik.alan.focus();
+  return true;
+}
+
+/* kullanıcı yazmaya başlayınca kırmızı çerçeve kalkar */
+document.addEventListener("input", (e) => {
+  if (e.target.classList) e.target.classList.remove("hatali");
+});
+document.addEventListener("change", (e) => {
+  if (e.target.classList) e.target.classList.remove("hatali");
+});
+
 async function api(yol, secenekler = {}) {
   const { govde, ...geri } = secenekler;
   const secenek = {
@@ -888,6 +936,8 @@ $("#giris-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const dugme = $("#giris-gonder");
   const uyari = $("#giris-uyari");
+  uyari.classList.remove("gorunur");
+  if (alanUyar($("#giris-form"), uyari)) return;
   const govde = {
     eposta: $("#giris-eposta").value.trim(),
     sifre: $("#giris-sifre").value,
@@ -962,6 +1012,8 @@ $("#sifre-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const uyari = $("#sifre-uyari");
   const dugme = $("#sifre-gonder");
+  uyari.classList.remove("gorunur");
+  if (alanUyar($("#sifre-form"), uyari)) return;
   const eski = $("#s-eski").value;
   const yeni = $("#s-yeni").value;
   const tekrar = $("#s-tekrar").value;
@@ -1032,6 +1084,8 @@ $("#yukle-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const uyari = $("#yukle-uyari");
   const dugme = $("#yukle-gonder");
+  uyari.classList.remove("gorunur");
+  if (alanUyar($("#yukle-form"), uyari)) return;
   const dosya = $("#y-dosya").files[0];
   const dersKodu = $("#y-ders").value.trim().replace(/\s+/g, " ").toUpperCase();
 

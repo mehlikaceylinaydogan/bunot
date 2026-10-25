@@ -80,7 +80,7 @@
     <button class="kapat" data-kapat="perde-giris">×</button>
     <h2 id="giris-baslik">Giriş yap</h2>
     <p class="ipucu" id="giris-ipucu">bunot'a sadece Boğaziçi e-postasıyla girilir: <b>@boun.edu.tr</b> veya <b>@std.bogazici.edu.tr</b></p>
-    <form id="giris-form" class="form">
+    <form id="giris-form" class="form" novalidate>
       <label class="alan gizli" id="ad-alani">Ad Soyad
         <input id="giris-ad" type="text" placeholder="ör. Ceylin Yılmaz" autocomplete="name">
       </label>
@@ -123,7 +123,7 @@
     <button class="kapat" data-kapat="perde-sifre">×</button>
     <h2>Şifre değiştir</h2>
     <p class="ipucu">Mevcut şifreni bir kez yaz, sonra yeni şifreni belirle.</p>
-    <form id="sifre-form" class="form">
+    <form id="sifre-form" class="form" novalidate>
       <label class="alan">Mevcut şifren
         <input id="s-eski" type="password" autocomplete="current-password" required>
       </label>
@@ -145,7 +145,7 @@
     <button class="kapat" data-kapat="perde-yukle">×</button>
     <h2>Not yükle</h2>
     <p class="ipucu">Kendi hazırladığın özetler, çalışma notları, sınav soruları… Hocanın slaytını veya kitabını yükleme.</p>
-    <form id="yukle-form" class="form">
+    <form id="yukle-form" class="form" novalidate>
       <label class="alan">Ders
         <input id="y-ders" type="text" list="ders-listesi" placeholder="Ders kodu yaz, ör. SOC 101" required>
         <datalist id="ders-listesi"></datalist>
