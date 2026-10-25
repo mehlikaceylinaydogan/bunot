@@ -1,12 +1,53 @@
 # bunot
 
-Boğaziçi Üniversitesi öğrencileri için ders notu paylaşım sitesi.
+**Boğaziçi Üniversitesi öğrencileri için ders notu paylaşım sitesi.**
+Bütün dersler tek arama kutusunda; her bölümün gerçek müfredatı dönem dönem;
+öğrenciler kendi notlarını yükleyip paylaşıyor.
 
-- **1472 ders**, tek arama kutusu
-- **30 lisans programı** için 8 dönemlik gerçek müfredat, giriş yılına göre
-- Üyelik sadece `@boun.edu.tr` ve `@std.bogazici.edu.tr` adresleriyle
-- Not yükleme, indirme, silme; tür (Midterm, Final, Quiz…) ve dönem bilgisi
-- Açık/koyu tema, açılır-kapanır bölüm paneli, mobil uyumlu
+![bunot ana sayfa](ekranlar/ana-sayfa.png)
+
+## Neden yaptım
+
+Boğaziçi'nde notlar WhatsApp gruplarında, klasörlerde, eski öğrencilerin
+bilgisayarlarında dağınık duruyor. Hangi dersin notu var, kimde var, hangi döneme
+ait — belli değil. bunot bunu tek yerde topluyor: dersi bul, notu olanı gör,
+indir. Not yüklemek de 30 saniyelik iş.
+
+## Neler var
+
+- **1472 ders** (869 lisans dersi) tek arama kutusunda. `tr109`, `TR 109`,
+  `tr-109` hepsi aynı dersi bulur; Türkçe harflere toleranslı arama.
+- **30 lisans programı** için 8 dönemlik resmî müfredat. Dersler sınıf sınıf
+  listelenir, "birini seç" seçenekleri ayrı kutu olarak gösterilir.
+- **Giriş yılına göre müfredat**: kayıt olurken girdiğin yıl, o yılın programını
+  getirir; program değiştiyse uyarı notu düşer.
+- **Sadece Boğaziçi e-postası**: `@boun.edu.tr` ve `@std.bogazici.edu.tr`.
+- **Not yükleme**: ders, başlık, tür (Midterm, Final, Quiz…), dönem, dosya.
+  İndirme sayısı tutulur, kendi notunu silebilirsin.
+- **Şifremi unuttum**: e-posta + kayıtlı ad eşleşirse yeni şifre belirlenir.
+- Açık/koyu tema, fareyle açılan bölüm paneli, mobil uyumlu, klavyeyle gezilebilir.
+
+## Ekranlar
+
+**Bölüm sayfası — dönem dönem ders programı**
+
+![Bölüm sayfası](ekranlar/bolum-sayfasi.png)
+
+**Not yükleme**
+
+<img src="ekranlar/not-yukle.png" alt="Not yükleme penceresi" width="520">
+
+## Nasıl çalışır
+
+Sunucu yok, veritabanı yok: küçük bir Python sunucusu (`http.server`) hem
+sayfaları hem JSON tabanlı API'yi sunuyor. Veriler `site/veri/` altındaki JSON
+dosyalarında; yüklenen dosyalar diskte. Ön yüz tek sayfa: hash tabanlı yönlendirme,
+framework yok, sıfır bağımlılık.
+
+- Ders kataloğu ve müfredat, Boğaziçi'nin halka açık lisans programları
+  sayfalarından bir kez çekilip JSON'a yazıldı (`araclar/dersleri_indir.py`).
+- Şifreler düz metin değil: kullanıcıya özel tuz + SHA-256 özeti.
+- Oturumlar HttpOnly çerezle tutulur.
 
 ## Çalıştırma (Windows)
 
@@ -15,18 +56,44 @@ Boğaziçi Üniversitesi öğrencileri için ders notu paylaşım sitesi.
 
 Sunucu yalnızca bu bilgisayarda çalışır; internete açık değildir.
 
+## Teknolojiler
+
+- Python 3 — `http.server`, `json`, `hashlib`, `secrets` (ek paket yok)
+- HTML, CSS (değişkenlerle tema), JavaScript (ES6+, framework yok)
+- JSON dosyalarıyla kalıcı veri, dosya sistemi ile not arşivi
+
 ## Klasörler
 
 ```
-Siteyi aç.vbs          siteyi sessizce başlatır, tarayıcıyı açar
-site/sunucu.py         küçük bir Python sunucusu (API + dosya sunumu)
-site/sayfalar/         index.html, stil.css, uygulama.js, fontlar
-site/veri/dersler.json ders kataloğu (2026/2027-1)
+Siteyi aç.vbs           siteyi sessizce başlatır, tarayıcıyı açar
+site/sunucu.py          sunucu: sayfalar + API (kayıt, giriş, not, indirme)
+site/sayfalar/          index.html, stil.css, uygulama.js, fontlar
+site/veri/dersler.json  ders kataloğu (2026/2027-1)
 site/veri/mufredat.json bölüm müfredatları
-site/veri/kisiler.json hesaplar        (repoya dahil değil)
-site/veri/notlar.json  paylaşılan notlar (repoya dahil değil)
-site/veri/dosyalar/    yüklenen dosyalar (repoya dahil değil)
+site/veri/kisiler.json  hesaplar           (repoya dahil değil)
+site/veri/notlar.json   paylaşılan notlar  (repoya dahil değil)
+site/veri/dosyalar/     yüklenen dosyalar  (repoya dahil değil)
+araclar/                katalog çekme betiği
+ekranlar/               README görselleri
 ```
 
-Hesaplar ve yüklenen notlar kişisel veri olduğu için `.gitignore` ile dışarıda
-tutulur. Şifreler düz metin değil, tuzlanmış SHA-256 özeti olarak saklanır.
+## Gizlilik
+
+Hesaplar, paylaşılan notlar ve yüklenen dosyalar kişisel veri olduğu için
+`.gitignore` ile repo dışında tutulur. Depoda yalnızca site kodu ve halka açık
+ders/müfredat bilgisi bulunur.
+
+---
+
+## English
+
+**A course-notes sharing site for Boğaziçi University students.** All courses in
+one search box, the official curriculum for each of 30 undergraduate programs
+semester by semester, and student-uploaded notes with type, term and download
+counts. Membership is limited to Boğaziçi e-mail addresses.
+
+Built with a small Python `http.server` backend and a dependency-free vanilla
+JS front end. Course catalogue and curricula were scraped once from the
+university's public program pages and stored as JSON. Passwords are stored as
+salted SHA-256 hashes; sessions use HttpOnly cookies. Personal data (accounts,
+uploaded notes) is excluded from the repository.
