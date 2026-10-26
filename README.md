@@ -24,6 +24,12 @@ indir. Not yüklemek de 30 saniyelik iş.
 - **Sadece Boğaziçi e-postası**: `@boun.edu.tr` ve `@std.bogazici.edu.tr`.
 - **Not yükleme**: ders, başlık, tür (Midterm, Final, Quiz…), dönem, dosya.
   İndirme sayısı tutulur, kendi notunu silebilirsin.
+- **Notu olan dersler öne**: bölüm ve arama listelerinde notu olan ders başta;
+  "sadece notu olanlar" süzgeciyle boş dersler gizlenir.
+- **İndirmeden bakma**: PDF ve resimler tarayıcıda açılır; beğenirsen indirirsin.
+- **Beğeni ve kaydetme**: "işime yaradı" sayacı, sonra bakmak için kaydetme ve
+  kendi **Kaydettiklerim** sayfan.
+- **Bölümüm**: her dönemin başında o dönemdeki derslerin not sayısı.
 - **Şifremi unuttum**: e-posta + kayıtlı ad eşleşirse yeni şifre belirlenir.
 - Açık/koyu tema, fareyle açılan bölüm paneli, mobil uyumlu, klavyeyle gezilebilir.
 
@@ -90,7 +96,9 @@ ders/müfredat bilgisi bulunur.
 **A course-notes sharing site for Boğaziçi University students.** All courses in
 one search box, the official curriculum for each of 30 undergraduate programs
 semester by semester, and student-uploaded notes with type, term and download
-counts. Membership is limited to Boğaziçi e-mail addresses.
+counts. Courses that already have notes are listed first, notes can be previewed
+in the browser before downloading, and users can like and bookmark them.
+Membership is limited to Boğaziçi e-mail addresses.
 
 Built with a small Python `http.server` backend and a dependency-free vanilla
 JS front end. Course catalogue and curricula were scraped once from the

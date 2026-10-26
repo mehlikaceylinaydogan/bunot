@@ -893,6 +893,72 @@ a:hover { text-decoration: none; }
 }
 .not-aciklama { font-size: 12.5px; color: var(--murekkep-yumusak); margin-top: 8px; line-height: 1.55; }
 
+.not-eylem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 360px;
+}
+.begeni-dugme, .kaydet-dugme { border-color: var(--cizgi-koyu); }
+.begeni-dugme.secili {
+  color: var(--pembe);
+  border-color: var(--pembe);
+  background: var(--pembe-soluk);
+}
+.kaydet-dugme.secili {
+  color: var(--mavi);
+  border-color: var(--mavi);
+  background: var(--mavi-soluk);
+}
+
+/* bölüm sayfasındaki "sadece notu olanlar" süzgeci */
+.filtre-cip {
+  border: 2px solid var(--cizgi-koyu);
+  background: var(--kart);
+  color: var(--murekkep-yumusak);
+  border-radius: 999px;
+  padding: 8px 15px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color .18s, color .18s, background .18s;
+}
+.filtre-cip:hover { border-color: var(--mor); color: var(--mor); }
+.filtre-cip.acik {
+  border-color: var(--yesil);
+  color: var(--yesil);
+  background: var(--yesil-soluk);
+}
+
+/* nota bakma penceresi */
+.kutu.bak-kutu { max-width: 920px; }
+.bak-govde {
+  border: 2px solid var(--cizgi-koyu);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--uzerine);
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+}
+.bak-govde iframe {
+  width: 100%;
+  height: min(66vh, 640px);
+  border: 0;
+  background: #fff;
+}
+.bak-govde img { max-width: 100%; max-height: min(66vh, 640px); display: block; }
+.bak-govde .bos-durum { border: 0; background: transparent; }
+.bak-alt-satir {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
 .bos-durum {
   background: var(--kart);
   border: 2px dashed var(--cizgi-koyu);

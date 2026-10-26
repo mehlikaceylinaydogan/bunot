@@ -9,6 +9,7 @@ const D = {
   sayilar: { ders: 0, bolum: 0, not: 0, kisi: 0 },
   seciliBolum: null,
   aramaMetni: "",
+  sadeceNotlu: false,
   sadeceLisans: localStorage.getItem("bunot-lisans") !== "0",
 };
 
@@ -209,6 +210,15 @@ function notSayisi(kod) {
   return D.notlar.filter((n) => n.dersKodu === kod).length;
 }
 
+/* notu olan dersler listede öne çıkar; kendi aralarında çok notu olan önce */
+function notuOlanlarOnce(dersler) {
+  const sira = new Map(dersler.map((d, i) => [d.kod, i]));
+  return [...dersler].sort((a, b) => {
+    const fark = notSayisi(b.kod) - notSayisi(a.kod);
+    return fark || sira.get(a.kod) - sira.get(b.kod);
+  });
+}
+
 /* --- ders süzgeci: yüksek lisans dersleri (500+) istenirse gizlenir --- */
 function dersNumarasi(d) {
   const parca = (d.kod.split(" ")[1] || "").replace(/\D/g, "");
@@ -295,6 +305,7 @@ function hesapYaz() {
   $("#hesap").innerHTML = k
     ? `<span class="kisi-ad">${kac(k.ad)}</span>
        <button class="dugme kucuk hesap-dugme bolumum-dugme" data-bolumum>Bölümüm</button>
+       <button class="dugme kucuk hesap-dugme kaydedilenler-dugme" data-kaydedilenler>Kaydettiklerim${k.kayitSayisi ? ` (${k.kayitSayisi})` : ""}</button>
        <button class="dugme kucuk yukle-dugme" data-yukle><span>Not yükle</span></button>
        <button class="dugme kucuk hesap-dugme cikis-dugme" id="cikis" title="Çıkış yap">Çıkış</button>`
     : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
@@ -375,6 +386,7 @@ function yonlendir() {
   if (tur === "bolumum") return bolumumGoster();
   if (tur === "ders" && deger) return dersGoster(deger);
   if (tur === "notlar") return notlarGoster();
+  if (tur === "kaydettiklerim") return kaydedilenlerGoster();
   return anaSayfa();
 }
 
@@ -435,7 +447,11 @@ function bolumGoster(kod) {
   if (!g) return anaSayfa();
   D.seciliBolum = g.kod;
   yanListeYaz($("#bolum-arama").value);
-  const dersler = gorunenDersler().filter((d) => g.kodlar.includes(d.bolum));
+  const tumDersler = gorunenDersler().filter((d) => g.kodlar.includes(d.bolum));
+  const notluSayi = tumDersler.filter((d) => notSayisi(d.kod)).length;
+  const dersler = D.sadeceNotlu
+    ? tumDersler.filter((d) => notSayisi(d.kod))
+    : notuOlanlarOnce(tumDersler);
   const mufHam = g.kodlar.map((k) => D.mufredat[k]).find(Boolean) || null;
   const girisYili = (D.kullanici && D.kullanici.girisYili) || "";
   const muf = mufredatSurum(mufHam, girisYili);
@@ -456,11 +472,18 @@ function bolumGoster(kod) {
     ${muf ? `
       ${yilNotu ? `<div class="yil-notu">${kac(yilNotu)}</div>` : ""}
       ${mufredatNotlari(muf)}
-      ${mufredatBloklari(muf)}
-      <div class="bolum-ayirac">Bu dönem açılan dersler</div>` : ""}
+      ${mufredatBloklari(muf)}` : ""}
+    <div class="bolum-basligi-alt">
+      <h2>Bu dönem açılan dersler</h2>
+      ${notluSayi ? `<button class="filtre-cip${D.sadeceNotlu ? " acik" : ""}" data-notlu>
+        ${D.sadeceNotlu ? "Tüm dersleri göster" : `Sadece notu olanlar (${notluSayi})`}
+      </button>` : ""}
+    </div>
     <div class="ders-izgara">
       ${dersler.map(dersKart).join("")}
-    </div>`;
+    </div>
+    ${!dersler.length ? `<div class="bos-durum"><strong>Bu bölümde notu olan ders yok.</strong>
+      Filtreyi kapatıp bütün derslere bakabilirsin.</div>` : ""}`;
   window.scrollTo({ top: 0 });
 }
 
@@ -526,13 +549,25 @@ function satirKarti(s) {
   return mufredatKarti(s.kod);
 }
 
+/* bir dönemin derslerinde kaç not var */
+function donemNotSayisi(dn) {
+  const kodlar = [];
+  for (const s of dn.satirlar) {
+    if (s.tip === "secenek") kodlar.push(...(s.kodlar || []));
+    else if (s.kod) kodlar.push(s.kod);
+  }
+  return kodlar.reduce((toplam, kod) => toplam + notSayisi(kod), 0);
+}
+
 function donemBlogu(dn, rozet) {
+  const not = donemNotSayisi(dn);
   return `
     <div class="sinif-blok">
       <div class="sinif-baslik">
         <strong>${dn.no}. dönem</strong>
         ${rozet ? `<span class="rozet">${kac(rozet)}</span>` : ""}
         <span>${dn.satirlar.length} ders</span>
+        ${not ? `<span class="etiket yesil">${not} not</span>` : ""}
       </div>
       <div class="ders-izgara">${dn.satirlar.map(satirKarti).join("")}</div>
     </div>`;
@@ -761,8 +796,9 @@ async function dersNotlariniYaz(kod) {
 function notKart(n) {
   const uzanti = (n.dosyaAdi.split(".").pop() || "").toUpperCase().slice(0, 4);
   const benim = D.kullanici && D.kullanici.id === n.yukleyenId;
+  const begeni = n.begeni || 0;
   return `
-    <article class="not-kart">
+    <article class="not-kart" data-not="${n.id}">
       <div class="dosya-simge">${kac(uzanti)}</div>
       <div>
         <div class="not-baslik">${kac(n.baslik)}</div>
@@ -773,12 +809,20 @@ function notKart(n) {
           <span>${kac(n.yukleyen)}</span>
           <span>${tarihYaz(n.tarih)}</span>
           <span>${n.indirme || 0} indirme</span>
+          <span data-begeni-alt${begeni ? "" : " hidden"}>${begeni} beğeni</span>
           <span>${boyutYaz(n.boyut)}</span>
         </div>
         ${n.aciklama ? `<div class="not-aciklama">${kac(n.aciklama)}</div>` : ""}
       </div>
-      <div style="display:flex;gap:6px;align-items:center">
+      <div class="not-eylem">
         ${benim ? `<button class="dugme sade kucuk" data-sil="${n.id}">Sil</button>` : ""}
+        <button class="dugme sade kucuk begeni-dugme${n.begendim ? " secili" : ""}"
+                data-begeni="${n.id}" aria-pressed="${n.begendim ? "true" : "false"}"
+                title="Bu not işime yaradı">♥ <span data-begeni-sayi>${begeni}</span></button>
+        <button class="dugme sade kucuk kaydet-dugme${n.kaydettim ? " secili" : ""}"
+                data-kaydet="${n.id}" aria-pressed="${n.kaydettim ? "true" : "false"}"
+                title="Sonra bakmak için kaydet">${n.kaydettim ? "Kaydedildi" : "Kaydet"}</button>
+        <button class="dugme kucuk" data-bak="${n.id}">Bak</button>
         <button class="dugme kucuk" data-indir="${n.id}">İndir</button>
       </div>
     </article>`;
@@ -802,13 +846,36 @@ function notlarGoster() {
   window.scrollTo({ top: 0 });
 }
 
+function kaydedilenlerGoster() {
+  D.seciliBolum = null;
+  yanListeYaz($("#bolum-arama").value);
+  if (!D.kullanici) {
+    anaSayfa();
+    return girisIste("Kaydettiklerini görmek için giriş yapman gerekiyor.");
+  }
+  const liste = D.notlar.filter((n) => n.kaydettim);
+  $("#icerik").innerHTML = `
+    <div class="bolum-basligi">
+      <div>
+        <h1>Kaydettiklerim</h1>
+        <p>${liste.length} not · sonra bakmak için ayırdıkların</p>
+      </div>
+      <a class="dugme" href="#/notlar">Tüm notlar →</a>
+    </div>
+    ${liste.length
+      ? `<div class="not-listesi">${liste.map(notKart).join("")}</div>`
+      : `<div class="bos-durum"><strong>Henüz not kaydetmedin.</strong>
+           Bir notun yanındaki "Kaydet" düğmesine bas; burada birikir.</div>`}`;
+  window.scrollTo({ top: 0 });
+}
+
 /* ------------------------------------------------------------------ arama */
 function aramaYap(metin) {
   D.aramaMetni = metin;
   const s = kucult(metin).trim();
   if (s.length < 2) { yonlendir(); return; }
 
-  const dersler = dersAra(metin).slice(0, 60);
+  const dersler = notuOlanlarOnce(dersAra(metin)).slice(0, 60);
   const notlar = D.notlar.filter((n) =>
     kucult(n.baslik).includes(s) || kucult(n.aciklama).includes(s) ||
     aramaAnahtari(n.dersKodu).includes(aramaAnahtari(metin))).slice(0, 30);
@@ -1165,6 +1232,96 @@ async function indir(notId) {
   }
 }
 
+/* ------------------------------------------------------------------ beğeni */
+async function begeniDegistir(notId) {
+  if (!D.kullanici) return girisIste("Beğenmek için giriş yapman gerekiyor.");
+  const n = D.notlar.find((x) => x.id === notId);
+  try {
+    const c = await api("begeni", {
+      method: "POST",
+      govde: JSON.stringify({ id: notId }),
+    });
+    if (n) { n.begeni = c.begeni; n.begendim = c.begendim; }
+    const kart = document.querySelector(`[data-not="${notId}"]`);
+    if (kart) {
+      const dugme = kart.querySelector("[data-begeni]");
+      if (dugme) {
+        dugme.classList.toggle("secili", c.begendim);
+        dugme.setAttribute("aria-pressed", c.begendim ? "true" : "false");
+      }
+      const sayi = kart.querySelector("[data-begeni-sayi]");
+      if (sayi) sayi.textContent = c.begeni;
+      const alt = kart.querySelector("[data-begeni-alt]");
+      if (alt) {
+        alt.textContent = c.begeni ? c.begeni + " beğeni" : "";
+        alt.hidden = !c.begeni;
+      }
+    }
+    bildir(c.begendim ? "Beğendin, teşekkürler." : "Beğeni geri alındı.");
+  } catch (hata) {
+    bildir(hata.message);
+  }
+}
+
+/* ------------------------------------------------------------------ kaydetme */
+async function kaydetDegistir(notId) {
+  if (!D.kullanici) return girisIste("Kaydetmek için giriş yapman gerekiyor.");
+  const n = D.notlar.find((x) => x.id === notId);
+  try {
+    const c = await api("kaydet", {
+      method: "POST",
+      govde: JSON.stringify({ id: notId }),
+    });
+    if (n) n.kaydettim = c.kaydettim;
+    if (D.kullanici) D.kullanici.kayitSayisi = c.kayitSayisi;
+    hesapYaz();
+    const kart = document.querySelector(`[data-not="${notId}"]`);
+    if (kart) {
+      const dugme = kart.querySelector("[data-kaydet]");
+      if (dugme) {
+        dugme.classList.toggle("secili", c.kaydettim);
+        dugme.setAttribute("aria-pressed", c.kaydettim ? "true" : "false");
+        dugme.textContent = c.kaydettim ? "Kaydedildi" : "Kaydet";
+      }
+    }
+    bildir(c.kaydettim ? "Kaydedildi. Kaydettiklerim sayfasında bulabilirsin." : "Kayıttan çıkarıldı.");
+    if (!c.kaydettim && location.hash.includes("kaydettiklerim")) kaydedilenlerGoster();
+  } catch (hata) {
+    bildir(hata.message);
+  }
+}
+
+/* ------------------------------------------------------------------ önizleme */
+function notBak(notId) {
+  if (!D.kullanici) return girisIste("Nota bakmak için giriş yapman gerekiyor.");
+  const n = D.notlar.find((x) => x.id === notId);
+  if (!n) return;
+  const uzanti = (n.dosyaAdi.split(".").pop() || "").toLowerCase();
+  const resim = ["png", "jpg", "jpeg", "webp", "gif", "bmp"].includes(uzanti);
+  const adres = "/api/bak/" + encodeURIComponent(notId);
+
+  $("#bak-baslik").textContent = n.baslik;
+  $("#bak-alt").textContent = [
+    n.dersKodu,
+    n.tur,
+    n.donem ? donemYaz(n.donem) : "",
+    n.yukleyen,
+  ].filter(Boolean).join(" · ");
+
+  const govde = $("#bak-govde");
+  if (uzanti === "pdf") {
+    govde.innerHTML = `<iframe src="${adres}" title="${kac(n.baslik)}"></iframe>`;
+  } else if (resim) {
+    govde.innerHTML = `<img src="${adres}" alt="${kac(n.baslik)}">`;
+  } else {
+    govde.innerHTML = `<div class="bos-durum"><strong>Bu dosya tarayıcıda görünmüyor.</strong>
+      İndirip açabilirsin.</div>`;
+  }
+  $("#bak-ders").href = "#/ders/" + encodeURIComponent(n.dersKodu);
+  $("#bak-indir").setAttribute("data-indir", notId);
+  $("#perde-bak").hidden = false;
+}
+
 /* ------------------------------------------------------------------ silme */
 async function notSil(notId) {
   if (!confirm("Bu notu silmek istediğine emin misin? Geri alınamaz.")) return;
@@ -1194,6 +1351,26 @@ document.addEventListener("click", (e) => {
 
   const s = e.target.closest("[data-sil]");
   if (s) return notSil(s.getAttribute("data-sil"));
+
+  const bg = e.target.closest("[data-begeni]");
+  if (bg) return begeniDegistir(bg.getAttribute("data-begeni"));
+
+  const kd = e.target.closest("[data-kaydet]");
+  if (kd) return kaydetDegistir(kd.getAttribute("data-kaydet"));
+
+  const bk = e.target.closest("[data-bak]");
+  if (bk) return notBak(bk.getAttribute("data-bak"));
+
+  if (e.target.closest("[data-kaydedilenler]")) {
+    location.hash = "#/kaydettiklerim";
+    return;
+  }
+
+  if (e.target.closest("[data-notlu]")) {
+    D.sadeceNotlu = !D.sadeceNotlu;
+    if (D.seciliBolum) bolumGoster(D.seciliBolum);
+    return;
+  }
 
   if (e.target.closest("[data-bolumum]")) {
     location.hash = "#/bolumum";

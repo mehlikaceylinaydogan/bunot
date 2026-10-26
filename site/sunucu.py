@@ -126,13 +126,18 @@ def sifre_ozeti(sifre, tuz):
 
 
 def kullanici_ozeti(k):
+    ids = set(k.get("kaydedilenler") or [])
+    kayit_sayisi = sum(1 for n in notlar if n["id"] in ids)
     return {"id": k["id"], "ad": k["ad"], "eposta": k["eposta"],
             "bolum": k.get("bolum", ""), "girisYili": k.get("girisYili", ""),
-            "tarih": k["tarih"]}
+            "tarih": k["tarih"],
+            "kayitSayisi": kayit_sayisi}
 
 
-def not_ozeti(n):
+def not_ozeti(n, k=None):
     d = ders_sozluk.get(n["dersKodu"], {})
+    begenenler = n.get("begenenler", [])
+    kaydedilenler = (k or {}).get("kaydedilenler") or []
     return {
         "id": n["id"],
         "dersKodu": n["dersKodu"],
@@ -147,6 +152,9 @@ def not_ozeti(n):
         "yukleyenId": n["yukleyenId"],
         "tarih": n["tarih"],
         "indirme": n.get("indirme", 0),
+        "begeni": len(begenenler),
+        "begendim": bool(k and k["id"] in begenenler),
+        "kaydettim": bool(k and n["id"] in kaydedilenler),
     }
 
 
@@ -298,10 +306,21 @@ class Isleyici(BaseHTTPRequestHandler):
 
         if uc == "notlar":
             ders = (sorgu.get("ders") or [""])[0]
+            k = self.kullanici()
             with kilit:
                 liste = [n for n in notlar if not ders or n["dersKodu"] == ders]
                 liste = sorted(liste, key=lambda n: n["tarih"], reverse=True)
-                return self.json_gonder({"notlar": [not_ozeti(n) for n in liste[:1000]]})
+                return self.json_gonder({"notlar": [not_ozeti(n, k) for n in liste[:1000]]})
+
+        if uc == "kaydettiklerim":
+            k = self.kullanici()
+            if not k:
+                return self.hata("Kaydettiklerini görmek için giriş yapmalısın.", 401)
+            with kilit:
+                ids = k.get("kaydedilenler") or []
+                liste = [not_ozeti(n, k) for n in notlar if n["id"] in ids]
+            liste.sort(key=lambda x: x["tarih"], reverse=True)
+            return self.json_gonder({"notlar": liste})
 
         if uc == "mufredat":
             with kilit:
@@ -317,30 +336,39 @@ class Isleyici(BaseHTTPRequestHandler):
                 })
 
         if uc.startswith("indir/"):
-            return self.dosya_indir(uc[6:])
+            return self.dosya_gonder(uc[6:], indir=True)
+
+        if uc.startswith("bak/"):
+            return self.dosya_gonder(uc[4:], indir=False)
 
         return self.hata("Bulunamadı", 404)
 
-    def dosya_indir(self, not_id):
+    def dosya_gonder(self, not_id, indir=True):
         k = self.kullanici()
         if not k:
-            return self.hata("İndirmek için giriş yapmalısın.", 401)
+            return self.hata("Görmek için giriş yapmalısın.", 401)
         with kilit:
             n = next((x for x in notlar if x["id"] == not_id), None)
             if not n:
                 return self.hata("Not bulunamadı.", 404)
-            n["indirme"] = n.get("indirme", 0) + 1
-            yaz(NOTLAR, notlar)
+            if indir:
+                n["indirme"] = n.get("indirme", 0) + 1
+                yaz(NOTLAR, notlar)
             yol = os.path.join(DOSYALAR, n["dosya"])
             adi = n["dosyaAdi"]
         if not os.path.isfile(yol):
             return self.hata("Dosya diskte bulunamadı.", 404)
         with open(yol, "rb") as f:
             govde = f.read()
+        tur = mimetypes.guess_type(adi)[0] or "application/octet-stream"
         self.send_response(200)
-        self.send_header("Content-Type", "application/octet-stream")
-        self.send_header("Content-Disposition",
-                         "attachment; filename*=UTF-8''" + urllib.parse.quote(adi))
+        self.send_header("Content-Type", tur)
+        if indir:
+            self.send_header("Content-Disposition",
+                             "attachment; filename*=UTF-8''" + urllib.parse.quote(adi))
+        else:
+            self.send_header("Content-Disposition",
+                             "inline; filename*=UTF-8''" + urllib.parse.quote(adi))
         self.send_header("Content-Length", str(len(govde)))
         self.end_headers()
         self.wfile.write(govde)
@@ -363,6 +391,10 @@ class Isleyici(BaseHTTPRequestHandler):
                                     cerez="oturum=; Path=/; Max-Age=0; SameSite=Lax; HttpOnly")
         if uc == "not":
             return self.not_ekle(veri)
+        if uc == "begeni":
+            return self.begeni(veri)
+        if uc == "kaydet":
+            return self.kaydet(veri)
         if uc == "bolum":
             return self.bolum_degistir(veri)
         if uc == "yil":
@@ -372,6 +404,44 @@ class Isleyici(BaseHTTPRequestHandler):
         if uc == "sifirla":
             return self.sifirla(veri)
         return self.hata("Bulunamadı", 404)
+
+    def begeni(self, veri):
+        """Bir notu beğen ya da beğeniyi geri al."""
+        k = self.kullanici()
+        if not k:
+            return self.hata("Beğenmek için giriş yapmalısın.", 401)
+        not_id = veri.get("id") or ""
+        with kilit:
+            n = next((x for x in notlar if x["id"] == not_id), None)
+            if not n:
+                return self.hata("Not bulunamadı.", 404)
+            begenenler = n.setdefault("begenenler", [])
+            if k["id"] in begenenler:
+                begenenler.remove(k["id"])
+            else:
+                begenenler.append(k["id"])
+            yaz(NOTLAR, notlar)
+            return self.json_gonder({"begeni": len(begenenler),
+                                     "begendim": k["id"] in begenenler})
+
+    def kaydet(self, veri):
+        """Notu kendi kaydettiklerine ekle ya da çıkar."""
+        k = self.kullanici()
+        if not k:
+            return self.hata("Kaydetmek için giriş yapmalısın.", 401)
+        not_id = veri.get("id") or ""
+        with kilit:
+            n = next((x for x in notlar if x["id"] == not_id), None)
+            if not n:
+                return self.hata("Not bulunamadı.", 404)
+            liste = k.setdefault("kaydedilenler", [])
+            if not_id in liste:
+                liste.remove(not_id)
+            else:
+                liste.insert(0, not_id)
+            yaz(KISILER, kisiler)
+            return self.json_gonder({"kaydettim": not_id in liste,
+                                     "kayitSayisi": len(liste)})
 
     def sifre_degistir(self, veri):
         k = self.kullanici()
@@ -460,6 +530,15 @@ class Isleyici(BaseHTTPRequestHandler):
                 return self.hata("Bu notu sadece yükleyen silebilir.", 403)
             notlar.remove(n)
             yaz(NOTLAR, notlar)
+            # silinen not, kaydedenlerin listesinde kalmasın
+            degisti = False
+            for x in kisiler:
+                liste = x.get("kaydedilenler") or []
+                if not_id in liste:
+                    liste.remove(not_id)
+                    degisti = True
+            if degisti:
+                yaz(KISILER, kisiler)
             try:
                 os.remove(os.path.join(DOSYALAR, n["dosya"]))
             except OSError:
@@ -505,6 +584,7 @@ class Isleyici(BaseHTTPRequestHandler):
                 "tuz": tuz,
                 "sifre": sifre_ozeti(sifre, tuz),
                 "tarih": time.strftime("%Y-%m-%d %H:%M"),
+                "kaydedilenler": [],
             }
             kisiler.append(k)
             yaz(KISILER, kisiler)
@@ -578,6 +658,7 @@ class Isleyici(BaseHTTPRequestHandler):
             "yukleyenAd": k["ad"],
             "tarih": time.strftime("%Y-%m-%d %H:%M"),
             "indirme": 0,
+            "begenenler": [],
         }
         with kilit:
             notlar.append(n)
