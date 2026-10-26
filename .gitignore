@@ -12,6 +12,9 @@ site/yedekler/
 __pycache__/
 *.pyc
 
+# --- Vercel yayın çıktısı (build sırasında üretilir) ---
+public/
+
 # --- Windows ---
 Thumbs.db
 desktop.ini

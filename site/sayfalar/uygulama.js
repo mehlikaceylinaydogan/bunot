@@ -10,6 +10,7 @@ const D = {
   seciliBolum: null,
   aramaMetni: "",
   sadeceNotlu: false,
+  demo: false,
   sadeceLisans: localStorage.getItem("bunot-lisans") !== "0",
 };
 
@@ -258,31 +259,51 @@ function dersAra(metin) {
 
 /* ------------------------------------------------------------------ başlangıç */
 async function basla() {
+  let katalog, oturum, notlar, mufredat = null;
   try {
-    const [katalog, oturum, notlar] = await Promise.all([
+    [katalog, oturum, notlar] = await Promise.all([
       api("katalog"),
       api("oturum"),
       api("notlar"),
     ]);
-    D.katalog = katalog;
-    D.kullanici = oturum.kullanici;
-    D.notlar = notlar.notlar || [];
+  } catch (hata) {
+    /* Sunucu yoksa (ör. Vercel'deki statik yayın) hazır JSON dosyalarından oku. */
+    try {
+      katalog = await (await fetch("veri/dersler.json")).json();
+      const m = await (await fetch("veri/mufredat.json")).json();
+      mufredat = m.mufredat || m;
+      oturum = { kullanici: null };
+      notlar = { notlar: [] };
+      D.demo = true;
+    } catch (hata2) {
+      $("#icerik").innerHTML = `<div class="bos-durum"><strong>Site yüklenemedi</strong>${kac(hata.message)}</div>`;
+      return;
+    }
+  }
+
+  D.katalog = katalog;
+  D.kullanici = oturum.kullanici;
+  D.notlar = notlar.notlar || [];
+  if (D.demo) {
+    D.mufredat = mufredat || {};
+    const serit = $("#demo-serit");
+    if (serit) serit.hidden = false;
+  } else {
     api("mufredat").then((m) => { D.mufredat = m.mufredat || {}; yonlendir(); }).catch(() => {});
-    for (const d of katalog.dersler) d._ara = aramaAnahtari(d.kod + " " + d.ad);
-    D.sayilar = {
-      ders: katalog.dersler.length,
-      bolum: katalog.bolumler.length,
-      not: D.notlar.length,
-      kisi: 0,
-    };
+  }
+  for (const d of katalog.dersler) d._ara = aramaAnahtari(d.kod + " " + d.ad);
+  D.sayilar = {
+    ders: katalog.dersler.length,
+    bolum: katalog.bolumler.length,
+    not: D.notlar.length,
+    kisi: 0,
+  };
+  if (!D.demo) {
     api("sayilar").then((s) => {
       D.sayilar = s;
       sayacYaz();
       hesapYaz();
     }).catch(() => {});
-  } catch (hata) {
-    $("#icerik").innerHTML = `<div class="bos-durum"><strong>Site yüklenemedi</strong>${kac(hata.message)}</div>`;
-    return;
   }
   yanListeYaz();
   hesapYaz();
@@ -308,7 +329,10 @@ function hesapYaz() {
        <button class="dugme kucuk hesap-dugme kaydedilenler-dugme" data-kaydedilenler>Kaydettiklerim${k.kayitSayisi ? ` (${k.kayitSayisi})` : ""}</button>
        <button class="dugme kucuk yukle-dugme" data-yukle><span>Not yükle</span></button>
        <button class="dugme kucuk hesap-dugme cikis-dugme" id="cikis" title="Çıkış yap">Çıkış</button>`
-    : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
+    : D.demo
+      ? `<span class="demo-rozet" title="Canlı demo: üyelik ve not yükleme kapalı">Canlı demo</span>
+         <a class="dugme kucuk" href="https://github.com/mehlikaceylinaydogan/bunot" target="_blank" rel="noopener">GitHub</a>`
+      : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
 
 }
 
@@ -942,6 +966,10 @@ function mufredatSurum(muf, yil) {
 }
 
 function girisAc(mod = "giris") {
+  if (D.demo) {
+    bildir("Canlı demoda üyelik kapalı. Not yükleme ve kaydetme yerel sürümde çalışıyor.");
+    return;
+  }
   girisModu = mod;
   const kayit = mod === "kayit";
   const sifirla = mod === "sifirla";
@@ -983,6 +1011,10 @@ function girisAc(mod = "giris") {
 function girisKapat() { $("#perde-giris").hidden = true; }
 
 function girisIste(mesaj) {
+  if (D.demo) {
+    bildir("Canlı demoda üyelik kapalı. Not yükleme ve kaydetme yerel sürümde çalışıyor.");
+    return;
+  }
   girisAc("giris");
   const u = $("#giris-uyari");
   u.textContent = mesaj || "Bunun için giriş yapman gerekiyor.";

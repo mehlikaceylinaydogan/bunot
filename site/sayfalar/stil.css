@@ -258,6 +258,33 @@ a:hover { text-decoration: none; }
 
 .dugme.kucuk { padding: 8px 13px; font-size: 13px; border-radius: 11px; }
 
+/* canlı demo şeridi (Vercel gibi statik yayında) */
+.demo-serit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  background: var(--mavi-soluk);
+  border-bottom: 2px solid var(--mavi);
+  font-size: 13px;
+  color: var(--murekkep-yumusak);
+  text-align: center;
+}
+.demo-serit[hidden] { display: none; }
+.demo-serit strong { color: var(--mavi); }
+.demo-serit a { color: var(--mor); font-weight: 700; }
+.demo-rozet {
+  border: 2px solid var(--mor);
+  color: var(--mor);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 /* üst bardaki renkli düğmeler */
 .bolumum-dugme {
   border-color: var(--mavi);
