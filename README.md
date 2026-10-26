@@ -4,6 +4,8 @@
 Bütün dersler tek arama kutusunda; her bölümün gerçek müfredatı dönem dönem;
 öğrenciler kendi notlarını yükleyip paylaşıyor.
 
+**Canlı demo:** https://mehlikaceylinaydogan.github.io/bunot/
+
 ![bunot ana sayfa](ekranlar/ana-sayfa.png)
 
 ## Neden yaptım
@@ -52,7 +54,7 @@ framework yok, sıfır bağımlılık.
 
 - Ders kataloğu ve müfredat, Boğaziçi'nin halka açık lisans programları
   sayfalarından bir kez çekilip JSON'a yazıldı (`araclar/dersleri_indir.py`).
-- Şifreler düz metin değil: kullanıcıya özel tuz + SHA-256 özeti.
+- Şifreler düz metin değil: kullanıcıya özel tuz + PBKDF2-HMAC-SHA256 (200 bin tur).
 - Oturumlar HttpOnly çerezle tutulur.
 
 ## Çalıştırma (Windows)
@@ -61,6 +63,19 @@ framework yok, sıfır bağımlılık.
 2. `Siteyi aç.vbs` dosyasına çift tıkla. Site `http://localhost:8765` adresinde açılır.
 
 Sunucu yalnızca bu bilgisayarda çalışır; internete açık değildir.
+
+## Canlı demo
+
+Site kodu aynı zamanda statik olarak yayınlanıyor:
+**https://mehlikaceylinaydogan.github.io/bunot/**
+
+Orada ders kataloğu ve müfredat gezilebilir; üyelik, not yükleme ve indirme
+kapalıdır (hesaplar ve dosyalar kalıcı disk istiyor, statik yayında disk yok).
+Sayfanın üstündeki "Canlı demo" şeridi bunu söyler. Tam sürüm yukarıdaki gibi
+kendi bilgisayarında çalışır.
+
+Yayın klasörü `docs/`; `node araclar/vercel_hazirla.js` ile üretilir. Aynı klasör
+Vercel'e de çıktı olarak verilebilir (`vercel.json`).
 
 ## Teknolojiler
 
@@ -79,7 +94,8 @@ site/veri/mufredat.json bölüm müfredatları
 site/veri/kisiler.json  hesaplar           (repoya dahil değil)
 site/veri/notlar.json   paylaşılan notlar  (repoya dahil değil)
 site/veri/dosyalar/     yüklenen dosyalar  (repoya dahil değil)
-araclar/                katalog çekme betiği
+araclar/                katalog çekme ve yayın hazırlama betikleri
+docs/                   statik yayın çıktısı (GitHub Pages / Vercel)
 ekranlar/               README görselleri
 ```
 
@@ -100,8 +116,12 @@ counts. Courses that already have notes are listed first, notes can be previewed
 in the browser before downloading, and users can like and bookmark them.
 Membership is limited to Boğaziçi e-mail addresses.
 
+Live demo: https://mehlikaceylinaydogan.github.io/bunot/ — the catalogue and the
+curricula are browsable; sign-up and note upload are disabled because they need a
+persistent disk.
+
 Built with a small Python `http.server` backend and a dependency-free vanilla
 JS front end. Course catalogue and curricula were scraped once from the
 university's public program pages and stored as JSON. Passwords are stored as
-salted SHA-256 hashes; sessions use HttpOnly cookies. Personal data (accounts,
-uploaded notes) is excluded from the repository.
+PBKDF2-HMAC-SHA256 hashes with a per-user salt; sessions use HttpOnly cookies.
+Personal data (accounts, uploaded notes) is excluded from the repository.
