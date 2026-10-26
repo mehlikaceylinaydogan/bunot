@@ -69,13 +69,20 @@ Sunucu yalnızca bu bilgisayarda çalışır; internete açık değildir.
 Site kodu aynı zamanda statik olarak yayınlanıyor:
 **https://mehlikaceylinaydogan.github.io/bunot/**
 
-Orada ders kataloğu ve müfredat gezilebilir; üyelik, not yükleme ve indirme
-kapalıdır (hesaplar ve dosyalar kalıcı disk istiyor, statik yayında disk yok).
-Sayfanın üstündeki "Canlı demo" şeridi bunu söyler. Tam sürüm yukarıdaki gibi
-kendi bilgisayarında çalışır.
+Orada her şey denenebilir: Boğaziçi e-postasıyla hesap açabilir, not yükleyebilir,
+beğenebilir ve kaydedebilirsin. Fark şu: statik yayında arkasında çalışan bir
+sunucu ve disk olmadığı için **hesap, not ve beğeniler yalnızca senin tarayıcında**
+(IndexedDB) tutulur; sunucuya gitmez, başka ziyaretçi görmez. Sayfanın üstündeki
+şerit bunu söyler. Birkaç not da gezinirken görülsün diye örnek olarak eklenmiştir
+("örnek" etiketli).
+
+Kod tarafında tek fark `site/sayfalar/uygulama.js` içindeki `yerelApi()`: sunucu
+yoksa aynı uçları tarayıcıdaki küçük depo karşılar. Yerel sürümde bütün istekler
+Python sunucusuna gider.
 
 Yayın klasörü `docs/`; `node araclar/vercel_hazirla.js` ile üretilir. Aynı klasör
-Vercel'e de çıktı olarak verilebilir (`vercel.json`).
+Vercel'e de çıktı olarak verilebilir (`vercel.json`). Örnek not dosyaları
+`araclar/ornek_dosyalar.py` ile bir kez üretilir.
 
 ## Teknolojiler
 
@@ -117,8 +124,10 @@ in the browser before downloading, and users can like and bookmark them.
 Membership is limited to Boğaziçi e-mail addresses.
 
 Live demo: https://mehlikaceylinaydogan.github.io/bunot/ — the catalogue and the
-curricula are browsable; sign-up and note upload are disabled because they need a
-persistent disk.
+curricula are browsable and you can sign up with a Boğaziçi address, upload notes,
+like and bookmark them. On the static demo the backend runs in the browser
+(IndexedDB), so accounts and notes stay on the visitor's machine; a few notes are
+included as samples and labelled "örnek".
 
 Built with a small Python `http.server` backend and a dependency-free vanilla
 JS front end. Course catalogue and curricula were scraped once from the

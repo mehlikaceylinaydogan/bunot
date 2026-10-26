@@ -171,6 +171,8 @@ document.addEventListener("change", (e) => {
 });
 
 async function api(yol, secenekler = {}) {
+  /* deneme modunda sunucu yok: aynı uçları tarayıcıdaki küçük depo karşılar */
+  if (D.demo) return yerelApi(yol, secenekler);
   const { govde, ...geri } = secenekler;
   const secenek = {
     credentials: "same-origin",
@@ -182,6 +184,294 @@ async function api(yol, secenekler = {}) {
   const veri = await yanit.json().catch(() => ({}));
   if (!yanit.ok) throw new Error(veri.hata || "Bir şeyler ters gitti.");
   return veri;
+}
+
+/* ------------------------------------------------------- deneme modu deposu */
+/* Canlı yayın statik: arkasında çalışan bir sunucu yok. Bu yüzden deneme
+   modunda hesap, not ve beğeniler ziyaretçinin kendi tarayıcısında (IndexedDB)
+   tutulur; sunucuya hiçbir şey gitmez. Yerel sürümde aynı uçlar Python
+   sunucusuna gider, kod tarafında tek fark bu dosyadaki yerelApi(). */
+const YEREL = {
+  db: null,
+  adresler: new Map(),
+  async ac() {
+    if (this.db) return this.db;
+    this.db = await new Promise((ok, hata) => {
+      const istek = indexedDB.open("bunot-demo", 1);
+      istek.onupgradeneeded = () => istek.result.createObjectStore("kayitlar");
+      istek.onsuccess = () => ok(istek.result);
+      istek.onerror = () => hata(new Error("Tarayıcının deposu açılamadı."));
+    });
+    return this.db;
+  },
+  async islem(tur, calis) {
+    const db = await this.ac();
+    return new Promise((ok, hata) => {
+      const istek = calis(db.transaction("kayitlar", tur).objectStore("kayitlar"));
+      istek.onsuccess = () => ok(istek.result);
+      istek.onerror = () => hata(istek.error || new Error("Depo hatası."));
+    });
+  },
+  al(a) { return this.islem("readonly", (s) => s.get(a)); },
+  yaz(a, d) { return this.islem("readwrite", (s) => s.put(d, a)); },
+  sil(a) { return this.islem("readwrite", (s) => s.delete(a)); },
+  anahtarlar() { return this.islem("readonly", (s) => s.getAllKeys()); },
+};
+
+function bounMu(eposta) {
+  const alan = String(eposta || "").toLowerCase().split("@")[1] || "";
+  return alan === "boun.edu.tr" || alan.endsWith(".boun.edu.tr")
+    || alan === "bogazici.edu.tr" || alan.endsWith(".bogazici.edu.tr");
+}
+
+async function ozet(metin) {
+  try {
+    const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(metin));
+    return [...new Uint8Array(d)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  } catch (e) {
+    let h = 0;
+    for (const k of metin) h = (h * 31 + k.charCodeAt(0)) % 2147483647;
+    return "x" + h;
+  }
+}
+
+async function ornekNotlariYukle() {
+  try {
+    const d = await (await fetch("veri/ornek-notlar.json")).json();
+    return (d.notlar || d).map((n) => ({
+      ...n,
+      dosyaAdi: n.dosyaAdi || String(n.dosya || "").split("/").pop(),
+      boyut: n.boyut || 0,
+      _taban: n.begeni || 0,
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
+async function yerelKullanici() {
+  const k = await YEREL.al("oturum");
+  if (!k) return null;
+  const kaydet = (await YEREL.al("kaydet")) || [];
+  return { ...k, kayitSayisi: kaydet.length };
+}
+
+async function yerelNotlar(ders) {
+  const kullanici = await YEREL.al("oturum");
+  const begeniler = (await YEREL.al("begeni")) || [];
+  const kayitlar = (await YEREL.al("kaydet")) || [];
+  const benim = [];
+  for (const a of await YEREL.anahtarlar()) {
+    if (String(a).startsWith("not:")) {
+      const n = await YEREL.al(a);
+      if (n) benim.push(n);
+    }
+  }
+  return [...benim, ...(D.ornekNotlar || [])]
+    .filter((n) => !ders || n.dersKodu === ders)
+    .map((n) => {
+      const begendim = begeniler.includes(n.id);
+      const taban = n._taban != null ? n._taban : (n.begeni || 0);
+      return {
+        ...n,
+        _taban: taban,
+        begeni: taban + (begendim ? 1 : 0),
+        begendim,
+        kaydettim: kayitlar.includes(n.id),
+        benim: !!kullanici && n.yukleyenId === kullanici.id,
+      };
+    })
+    .sort((a, b) => String(b.tarih).localeCompare(String(a.tarih)));
+}
+
+async function yerelKayit(v) {
+  const eposta = String(v.eposta || "").trim().toLowerCase();
+  if (!bounMu(eposta)) {
+    throw new Error("bunot'a sadece Boğaziçi e-postasıyla kayıt olunur: @boun.edu.tr veya @std.bogazici.edu.tr");
+  }
+  if (String(v.sifre || "").length < 6) throw new Error("Şifre en az 6 karakter olsun.");
+  const eski = await YEREL.al("hesap");
+  if (eski && eski.eposta === eposta) {
+    throw new Error("Bu e-postayla bu tarayıcıda zaten hesap var. Giriş yapmayı dene.");
+  }
+  const hesap = {
+    id: "demo-" + Date.now().toString(36),
+    ad: String(v.ad || "").trim(),
+    eposta,
+    bolum: v.bolum || "",
+    girisYili: v.girisYili || "",
+    sifreOzet: await ozet(eposta + "|" + v.sifre),
+  };
+  await YEREL.yaz("hesap", hesap);
+  await YEREL.yaz("oturum", hesap);
+  return { kullanici: await yerelKullanici() };
+}
+
+async function yerelGiris(v) {
+  const eposta = String(v.eposta || "").trim().toLowerCase();
+  const hesap = await YEREL.al("hesap");
+  if (!hesap || hesap.eposta !== eposta) {
+    throw new Error("Bu tarayıcıda böyle bir hesap yok. Önce hesap oluştur.");
+  }
+  if (hesap.sifreOzet !== (await ozet(eposta + "|" + v.sifre))) {
+    throw new Error("Şifre yanlış. (Deneme modunda şifre yalnızca bu tarayıcıda tutulur.)");
+  }
+  await YEREL.yaz("oturum", hesap);
+  return { kullanici: await yerelKullanici() };
+}
+
+async function yerelSifirla(v) {
+  const eposta = String(v.eposta || "").trim().toLowerCase();
+  const hesap = await YEREL.al("hesap");
+  if (!hesap || hesap.eposta !== eposta) {
+    throw new Error("Bu tarayıcıda bu e-postayla hesap yok.");
+  }
+  const sadeles = (m) => String(m || "").toLowerCase()
+    .replace(/ı/g, "i").replace(/ş/g, "s").replace(/ğ/g, "g")
+    .replace(/ü/g, "u").replace(/ö/g, "o").replace(/ç/g, "c").trim();
+  if (sadeles(hesap.ad) !== sadeles(v.ad)) {
+    throw new Error("Yazdığın ad hesaptaki adla eşleşmiyor.");
+  }
+  if (String(v.yeni || "").length < 6) throw new Error("Yeni şifre en az 6 karakter olsun.");
+  hesap.sifreOzet = await ozet(eposta + "|" + v.yeni);
+  await YEREL.yaz("hesap", hesap);
+  await YEREL.yaz("oturum", hesap);
+  return { kullanici: await yerelKullanici() };
+}
+
+async function yerelSifreDegistir(v) {
+  const hesap = await YEREL.al("hesap");
+  if (!hesap) throw new Error("Önce giriş yap.");
+  if (hesap.sifreOzet !== (await ozet(hesap.eposta + "|" + v.eski))) {
+    throw new Error("Eski şifre yanlış.");
+  }
+  hesap.sifreOzet = await ozet(hesap.eposta + "|" + v.yeni);
+  await YEREL.yaz("hesap", hesap);
+  return { tamam: true };
+}
+
+async function yerelBegeni(id) {
+  const liste = (await YEREL.al("begeni")) || [];
+  const varMi = liste.includes(id);
+  await YEREL.yaz("begeni", varMi ? liste.filter((x) => x !== id) : [...liste, id]);
+  const n = D.notlar.find((x) => x.id === id);
+  const taban = n && n._taban != null ? n._taban : 0;
+  return { begendim: !varMi, begeni: taban + (varMi ? 0 : 1) };
+}
+
+async function yerelKaydet(id) {
+  const liste = (await YEREL.al("kaydet")) || [];
+  const varMi = liste.includes(id);
+  const yeni = varMi ? liste.filter((x) => x !== id) : [...liste, id];
+  await YEREL.yaz("kaydet", yeni);
+  return { kaydettim: !varMi, kayitSayisi: yeni.length };
+}
+
+async function yerelAlan(alan, deger) {
+  const hesap = await YEREL.al("hesap");
+  if (!hesap) throw new Error("Önce giriş yap.");
+  hesap[alan] = deger;
+  await YEREL.yaz("hesap", hesap);
+  await YEREL.yaz("oturum", hesap);
+  return { kullanici: await yerelKullanici() };
+}
+
+async function yerelNotEkle(v) {
+  const kullanici = await YEREL.al("oturum");
+  if (!kullanici) throw new Error("Not yüklemek için giriş yapman gerekiyor.");
+  const dersKodu = String(v.dersKodu || "").trim().toUpperCase();
+  const baslik = String(v.baslik || "").trim();
+  if (!baslik) throw new Error("Nota bir başlık ver.");
+  if (!dersKodu) throw new Error("Dersi seç.");
+  const id = "yerel-" + Date.now().toString(36);
+  const simdi = new Date();
+  const iki = (s) => String(s).padStart(2, "0");
+  const not = {
+    id,
+    dersKodu,
+    baslik,
+    tur: v.tur || "Other",
+    donem: v.donem || "",
+    aciklama: String(v.aciklama || "").trim(),
+    dosyaAdi: String(v.dosyaAdi || "not").slice(0, 160),
+    boyut: Math.round((String(v.dosya || "").length * 3) / 4),
+    yukleyen: kullanici.ad,
+    yukleyenId: kullanici.id,
+    tarih: `${simdi.getFullYear()}-${iki(simdi.getMonth() + 1)}-${iki(simdi.getDate())} ${iki(simdi.getHours())}:${iki(simdi.getMinutes())}`,
+    indirme: 0,
+    begeni: 0,
+    icerik: String(v.dosya || ""),
+  };
+  await YEREL.yaz("not:" + id, not);
+  const { icerik, ...disari } = not;
+  return { not: { ...disari, _taban: 0, begendim: false, kaydettim: false, benim: true } };
+}
+
+async function yerelNotSil(id) {
+  const n = await YEREL.al("not:" + id);
+  if (!n) throw new Error("Canlı demoda sadece kendi yüklediğin notları silebilirsin.");
+  await YEREL.sil("not:" + id);
+  const begeni = (await YEREL.al("begeni")) || [];
+  if (begeni.includes(id)) await YEREL.yaz("begeni", begeni.filter((x) => x !== id));
+  const kaydet = (await YEREL.al("kaydet")) || [];
+  if (kaydet.includes(id)) await YEREL.yaz("kaydet", kaydet.filter((x) => x !== id));
+  return { tamam: true };
+}
+
+/* deneme modunda dosya adresi: örnek notlar dosya yolundan, kendi yüklediğin
+   notlar tarayıcıdaki içerikten üretilir */
+function dosyaTuru(ad) {
+  const uzanti = String(ad || "").split(".").pop().toLowerCase();
+  return {
+    pdf: "application/pdf",
+    png: "image/png",
+    jpg: "image/jpeg",
+    jpeg: "image/jpeg",
+    webp: "image/webp",
+    gif: "image/gif",
+    txt: "text/plain",
+  }[uzanti] || "application/octet-stream";
+}
+
+async function yerelDosyaAdresi(n) {
+  if (n.dosya) return n.dosya;
+  if (YEREL.adresler.has(n.id)) return YEREL.adresler.get(n.id);
+  const kayit = await YEREL.al("not:" + n.id);
+  if (!kayit || !kayit.icerik) return null;
+  const ikili = atob(kayit.icerik);
+  const bayt = new Uint8Array(ikili.length);
+  for (let i = 0; i < ikili.length; i++) bayt[i] = ikili.charCodeAt(i);
+  const adres = URL.createObjectURL(new Blob([bayt], { type: dosyaTuru(kayit.dosyaAdi) }));
+  YEREL.adresler.set(n.id, adres);
+  return adres;
+}
+
+async function yerelApi(yol, geri = {}) {
+  const govde = geri.govde ? JSON.parse(geri.govde) : {};
+  const [uc, sorgu] = String(yol).split("?");
+  const parametre = new URLSearchParams(sorgu || "");
+
+  if (uc === "oturum") return { kullanici: await yerelKullanici() };
+  if (uc === "kayit") return yerelKayit(govde);
+  if (uc === "giris") return yerelGiris(govde);
+  if (uc === "sifirla") return yerelSifirla(govde);
+  if (uc === "sifre") return yerelSifreDegistir(govde);
+  if (uc === "cikis") { await YEREL.sil("oturum"); return { tamam: true }; }
+  if (uc === "notlar") return { notlar: await yerelNotlar(parametre.get("ders")) };
+  if (uc === "kaydettiklerim") {
+    return { notlar: (await yerelNotlar()).filter((n) => n.kaydettim) };
+  }
+  if (uc === "sayilar") {
+    const liste = await yerelNotlar();
+    return { ...D.sayilar, not: liste.length, kisi: (await yerelKullanici()) ? 1 : 0 };
+  }
+  if (uc === "begeni") return yerelBegeni(govde.id);
+  if (uc === "kaydet") return yerelKaydet(govde.id);
+  if (uc === "bolum") return yerelAlan("bolum", govde.bolum);
+  if (uc === "yil") return yerelAlan("girisYili", govde.girisYili);
+  if (uc === "not") return yerelNotEkle(govde);
+  if (uc.startsWith("not/")) return yerelNotSil(uc.slice(4));
+  throw new Error("Canlı demoda bu işlem kapalı.");
 }
 
 function bildir(mesaj) {
@@ -267,14 +557,16 @@ async function basla() {
       api("notlar"),
     ]);
   } catch (hata) {
-    /* Sunucu yoksa (ör. Vercel'deki statik yayın) hazır JSON dosyalarından oku. */
+    /* Sunucu yoksa (GitHub Pages'teki statik yayın) hazır JSON dosyalarından oku
+       ve deneme modunu aç: hesap/notlar tarayıcıda tutulur. */
     try {
       katalog = await (await fetch("veri/dersler.json")).json();
       const m = await (await fetch("veri/mufredat.json")).json();
       mufredat = m.mufredat || m;
-      oturum = { kullanici: null };
-      notlar = { notlar: [] };
       D.demo = true;
+      D.ornekNotlar = await ornekNotlariYukle();
+      oturum = { kullanici: await yerelKullanici() };
+      notlar = { notlar: await yerelNotlar() };
     } catch (hata2) {
       $("#icerik").innerHTML = `<div class="bos-durum"><strong>Site yüklenemedi</strong>${kac(hata.message)}</div>`;
       return;
@@ -298,6 +590,7 @@ async function basla() {
     not: D.notlar.length,
     kisi: 0,
   };
+  if (D.demo) D.sayilar.kisi = D.kullanici ? 1 : 0;
   if (!D.demo) {
     api("sayilar").then((s) => {
       D.sayilar = s;
@@ -330,7 +623,7 @@ function hesapYaz() {
        <button class="dugme kucuk yukle-dugme" data-yukle><span>Not yükle</span></button>
        <button class="dugme kucuk hesap-dugme cikis-dugme" id="cikis" title="Çıkış yap">Çıkış</button>`
     : D.demo
-      ? `<span class="demo-rozet" title="Canlı demo: üyelik ve not yükleme kapalı">Canlı demo</span>
+      ? `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>
          <a class="dugme kucuk" href="https://github.com/mehlikaceylinaydogan/bunot" target="_blank" rel="noopener">GitHub</a>`
       : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
 
@@ -828,6 +1121,7 @@ function notKart(n) {
         <div class="not-baslik">${kac(n.baslik)}</div>
         <div class="not-alt">
           <a href="#/ders/${encodeURIComponent(n.dersKodu)}" class="etiket mavi">${kac(n.dersKodu)}</a>
+          ${n.ornek ? `<span class="ornek-etiket" title="Canlı demo için hazırlanmış örnek not">örnek</span>` : ""}
           <span>${kac(n.tur)}</span>
           ${n.donem ? `<span>${kac(donemYaz(n.donem))}</span>` : ""}
           <span>${kac(n.yukleyen)}</span>
@@ -966,10 +1260,6 @@ function mufredatSurum(muf, yil) {
 }
 
 function girisAc(mod = "giris") {
-  if (D.demo) {
-    bildir("Canlı demoda üyelik kapalı. Not yükleme ve kaydetme yerel sürümde çalışıyor.");
-    return;
-  }
   girisModu = mod;
   const kayit = mod === "kayit";
   const sifirla = mod === "sifirla";
@@ -980,7 +1270,10 @@ function girisAc(mod = "giris") {
   $("#sifir-link-satir").hidden = sifirla;
   $("#giris-ipucu").innerHTML = sifirla
     ? "Boğaziçi e-postan ve hesabına yazdığın ad eşleşirse yeni şifreni belirleyebilirsin."
-    : "bunot'a sadece Boğaziçi e-postasıyla girilir: <b>@boun.edu.tr</b> veya <b>@std.bogazici.edu.tr</b>";
+    : "bunot'a sadece Boğaziçi e-postasıyla girilir: <b>@boun.edu.tr</b> veya <b>@std.bogazici.edu.tr</b>"
+      + (D.demo
+        ? "<br><b>Deneme modu:</b> hesap ve notlar yalnızca bu tarayıcıda tutulur, sunucuya gitmez."
+        : "");
   $("#ad-alani").classList.toggle("gizli", !kayit);
   $("#bolum-alani").classList.toggle("gizli", !kayit);
   $("#yil-alani").classList.toggle("gizli", !kayit);
@@ -1011,10 +1304,6 @@ function girisAc(mod = "giris") {
 function girisKapat() { $("#perde-giris").hidden = true; }
 
 function girisIste(mesaj) {
-  if (D.demo) {
-    bildir("Canlı demoda üyelik kapalı. Not yükleme ve kaydetme yerel sürümde çalışıyor.");
-    return;
-  }
   girisAc("giris");
   const u = $("#giris-uyari");
   u.textContent = mesaj || "Bunun için giriş yapman gerekiyor.";
@@ -1240,15 +1529,22 @@ $("#yukle-form").addEventListener("submit", async (e) => {
 
 /* ------------------------------------------------------------------ indirme */
 async function indir(notId) {
-  if (!D.kullanici) return girisIste("Not indirmek için giriş yapman gerekiyor.");
+  if (!D.kullanici && !D.demo) return girisIste("Not indirmek için giriş yapman gerekiyor.");
   const n = D.notlar.find((x) => x.id === notId);
   try {
-    const yanit = await fetch("/api/indir/" + notId, { credentials: "same-origin" });
-    if (!yanit.ok) {
-      const v = await yanit.json().catch(() => ({}));
-      throw new Error(v.hata || "İndirilemedi.");
+    let blob;
+    if (D.demo) {
+      const yerel = await yerelDosyaAdresi(n);
+      if (!yerel) throw new Error("Dosya bulunamadı.");
+      blob = await (await fetch(yerel)).blob();
+    } else {
+      const yanit = await fetch("/api/indir/" + notId, { credentials: "same-origin" });
+      if (!yanit.ok) {
+        const v = await yanit.json().catch(() => ({}));
+        throw new Error(v.hata || "İndirilemedi.");
+      }
+      blob = await yanit.blob();
     }
-    const blob = await yanit.blob();
     const adres = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = adres;
@@ -1324,13 +1620,18 @@ async function kaydetDegistir(notId) {
 }
 
 /* ------------------------------------------------------------------ önizleme */
-function notBak(notId) {
-  if (!D.kullanici) return girisIste("Nota bakmak için giriş yapman gerekiyor.");
+async function notBak(notId) {
   const n = D.notlar.find((x) => x.id === notId);
   if (!n) return;
-  const uzanti = (n.dosyaAdi.split(".").pop() || "").toLowerCase();
+  if (!D.kullanici && !D.demo) return girisIste("Nota bakmak için giriş yapman gerekiyor.");
+  const uzanti = (String(n.dosyaAdi || "").split(".").pop() || "").toLowerCase();
   const resim = ["png", "jpg", "jpeg", "webp", "gif", "bmp"].includes(uzanti);
-  const adres = "/api/bak/" + encodeURIComponent(notId);
+  /* deneme modunda dosya tarayıcıdan, gerçek sürümde sunucudan gelir */
+  const adres = D.demo ? await yerelDosyaAdresi(n) : "/api/bak/" + encodeURIComponent(notId);
+  if (!adres) {
+    bildir("Bu notun dosyası bulunamadı.");
+    return;
+  }
 
   $("#bak-baslik").textContent = n.baslik;
   $("#bak-alt").textContent = [
