@@ -12,7 +12,7 @@ site/yedekler/
 __pycache__/
 *.pyc
 
-# --- Vercel yayın çıktısı (build sırasında üretilir) ---
+# --- eski yayın klasörü (artık docs/ kullanılıyor) ---
 public/
 
 # --- Windows ---

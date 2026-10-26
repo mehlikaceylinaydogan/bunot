@@ -1,0 +1,7270 @@
+{
+ "ED": {
+  "ad": "Guidance and Psychological Counseling",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/33",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 121"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "EC 101",
+       "EC 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "MATH 105",
+       "MATH 106"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sınırsız Seçmeli",
+      "kodlar": [
+       "AE 111",
+       "AE 112"
+      ],
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 132"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "PHIL 112",
+       "PHIL 101"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 152"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "HIST 105",
+       "HIST 106",
+       "HUM 101",
+       "HUM 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 209"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 221"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "PSY 241",
+       "PSY 242"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 208"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 226"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 252"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 309"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 330"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 370"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 360"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 328"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 374"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 421"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 425"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 477"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 434"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 444"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 478"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "PRED": {
+  "ad": "Early Childhood Education",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/35",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 120"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 107"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "AE 111",
+       "AE 221"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 134"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "AE 112",
+       "AE 222"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 221"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 204"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 218"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 310"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 313"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 325"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 330"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 333"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 318"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 320"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 348"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 411"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 413"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 416"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PRED 414"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 422"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 424"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "FLED": {
+  "ad": "Foreign Language Education",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/37",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EL 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 126"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "FLED 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 224"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 218"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "FLED 323"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 315"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 317"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 313"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 310"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 360"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 324"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 306"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 318"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 403"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 411"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 413"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "FLED 412"
+     },
+     {
+      "tip": "ders",
+      "kod": "FLED 416"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "EL": {
+  "ad": "English Language and Literature",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/38",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 112"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 207"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 201"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 208"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 202"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AL 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "CL 309"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 303"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AL 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 305"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 306"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "DRA 403"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 405"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 402"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 412"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CL": {
+  "ad": "English Language and Literature",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/38",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 112"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 207"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 201"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CL 208"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 202"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AL 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "CL 309"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 303"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AL 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 305"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 306"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "DRA 403"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 405"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 402"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "EL 412"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "LING": {
+  "ad": "Linguistics",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/41",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "HIST 105",
+       "HUM 101"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İleri İngilizce",
+      "ipucu": "AE 2xx kodlu derslerden"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 105"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "HIST 106",
+       "HUM 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İleri İngilizce",
+      "ipucu": "AE 2xx kodlu derslerden"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 131"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 206"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 313"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 314"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 411"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LING 412"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "PHIL": {
+  "ad": "Philosophy",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/42",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 131"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 105"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 132"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 273"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 222"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 313"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 341"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHIL 314"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 382"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "PHYS": {
+  "ad": "Physics",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/43",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 197"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "AE 101",
+       "AE 111",
+       "EC 101"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 198"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 325"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 331"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçenek Seçmelisi",
+      "ipucu": "Seçtiğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Dağıtım Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 302"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 326"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 442"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 380"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçenek Seçmelisi",
+      "ipucu": "Seçtiğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Dağıtım Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 411"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 421"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 443"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 407"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 325"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçenek Seçmelisi",
+      "ipucu": "Seçtiğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Dağıtım Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PHYS 402"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 412"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 442"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Dağıtım Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CHEM": {
+  "ad": "Chemistry",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/44",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 100"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "PHYS 130",
+       "PHYS 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 215"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 223"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 225"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 216"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 224"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 226"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 234"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 325"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 335"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 337"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 345"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 347"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 316"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 346"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 400"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 447"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 457"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "MATH": {
+  "ad": "Mathematics",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/45",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 131"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 132"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 162"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 231"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 222"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 234"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 323"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 331"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 338"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "PSY": {
+  "ad": "Psychology",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/46",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 100"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 112"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 152"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 106"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 201"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "EC 101",
+       "EC 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 202"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 301"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 304"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "PSY 411"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "SOC": {
+  "ad": "Sociology",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/47",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "MATH 105",
+       "MATH 106"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 108"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 281"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 204"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "SOC 224",
+       "SOC 262"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "SOC 272",
+       "SOC 282",
+       "SOC 284",
+       "SOC 286"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 303"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 371"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "SOC 304",
+       "SOC 306"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 324"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "SOC 472"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "HIST": {
+  "ad": "History",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/48",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 105"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "PSY 101",
+       "POLS 101",
+       "PHIL 101"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 105"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 106"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Seçmeli",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 100"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 209"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "HIST 221",
+       "HIST 231",
+       "HIST 232",
+       "HIST 213",
+       "HIST 214"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 241"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 222"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "HIST 335",
+       "HIST 336"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 215"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 216"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Kısıtlı Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 401"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 495"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "HIST 402"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 496"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "TKL": {
+  "ad": "Turkish Language and Literature",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/49",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 107"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 108"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 204"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "HIST 235"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 111"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 205"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 217"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHIL 112"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 309"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 313"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 302"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 314"
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 314"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TKL 409"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 414"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 433"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TKL 434"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "BIO": {
+  "ad": "Molecular Biology and Genetics",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/51",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 109"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "kodlar": [
+       "AE 101",
+       "AE 102",
+       "AE 111",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 241"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 252"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 254"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 204"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 333"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 353"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 302"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 308"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 342"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 356"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 403"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 407"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "EC": {
+  "ad": "Economics",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/52",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LAW 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MIS 130"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "İleri İngilizce",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ],
+      "ipucu": "AE 2xx kodlu derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 205"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 233"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 206"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 208"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 223"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 234"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 331"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 470"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Alan Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "AD": {
+  "ad": "Business Administration",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/53",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LAW 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "LAW 231"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 251"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 130"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 252"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 205"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 351"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 352"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 302"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 353"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 497"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 409"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "POLS": {
+  "ad": "Political Science and International Relations",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/54",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "LAW 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "LAW 132"
+     },
+     {
+      "tip": "ders",
+      "kod": "PSY 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SOC 108"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "POLS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 215"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 217"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "POLS 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 206"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 246"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "POLS 303"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "POLS 340"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "POLS 472"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CMPE": {
+  "ad": "Computer Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/55",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 121"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 160"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 142"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 230"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 250"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 222"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 244"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CMPE 300"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 322"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 343"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 346"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 310"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CMPE 320"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 350"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 354"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 362"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 306"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Belirli Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CMPE 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "EE": {
+  "ad": "Electrical and Electronic Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/56",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 121"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 142"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 271"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EE 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 232"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 272"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 244"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EE 333"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 335"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 351"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 363"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 371"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EE 304"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Belirli Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Belirli Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Belirli Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Kısıtlı Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "IE": {
+  "ad": "Industrial Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/57",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 121"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGG 110"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 120"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "IE 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 255"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 216"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 256"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "IE 306"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 341"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "IE 313"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Uzmanlık Dersi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 423"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Uzmanlık Dersi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "IE 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "IE 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CHE": {
+  "ad": "Chemical Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/58",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 110"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHEM 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 121"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 241"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 222"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 232"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 333"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 353"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 383"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 302"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 334"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 342"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 386"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 433"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 475"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CHE 462"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHE 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "ME": {
+  "ad": "Mechanical Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/59",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 120"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 110"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 241"
+     },
+     {
+      "tip": "ders",
+      "kod": "EE 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 207"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 244"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 263"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ME 331"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 303"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 324"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 353"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ME 304"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 318"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 335"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 362"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ME 424"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 429"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçenek Dersi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ME 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçenek Dersi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Serbest Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "ME 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CE": {
+  "ad": "Civil Engineering",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/60",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "OHS 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 231"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 243"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 202"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 246"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CE 353"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 315"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 335"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 355"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CE 322"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 336"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 354"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 344"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CE 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 461"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CE 402"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Kısıtlı Seçmeli",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "CE 400"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "MIS": {
+  "ad": "Management Information Systems",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/61",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 125"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 131"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sınırsız Seçmeli",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ],
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 204"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 132"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Sınırsız Seçmeli",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ],
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 251"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 233"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 251"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 252"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 236"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 252"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MIS 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 331"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 323"
+     },
+     {
+      "tip": "ders",
+      "kod": "LAW 353"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MIS 326"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 344"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 346"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MIS 433"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 441"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 463"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 481"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MIS 400"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 422"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 432"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "TRM": {
+  "ad": "Sustainable Tourism Management",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/62",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 107"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 141"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 105"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 204"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 106"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 223"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "LAW 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 251"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 242"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 224"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 214"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 252"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 282"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 331"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 323"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 336"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 364"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 378"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 405"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 409"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 413"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "TRM 400"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 408"
+     },
+     {
+      "tip": "ders",
+      "kod": "TRM 492"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "INTT": {
+  "ad": "International Trade",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/63",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 105"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 125"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 142"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "AE 101",
+       "AE 102",
+       "AE 111",
+       "AE 112"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "EC 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 220"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 162"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sosyal Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 213"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 241"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 251"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 211"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "AD 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 212"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 252"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 242"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 254"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "Aynı dilde toplam kredi tamamlanır"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "INTT 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 355"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 375"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "INTT 322"
+     },
+     {
+      "tip": "ders",
+      "kod": "MIS 323"
+     },
+     {
+      "tip": "ders",
+      "kod": "AD 409"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 362"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 378"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi ya da Tamamlayıcı Ders",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "INTT 467"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 459"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 425"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi ya da Tamamlayıcı Ders",
+      "ipucu": "Bölümün onayladığı derslerden"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "INTT 400"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 434"
+     },
+     {
+      "tip": "ders",
+      "kod": "LAW 336"
+     },
+     {
+      "tip": "ders",
+      "kod": "INTT 438"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "Bölümün onayladığı derslerden"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Tamamlayıcı Ders",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "SCED": {
+  "ad": "Science Education",
+  "kaynak": "https://bogazici.edu.tr/tr/pages/lisans-programlari/36",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 120"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "MATH 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İleri İngilizce",
+      "ipucu": "AE 2xx kodlu derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 225"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 103"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "BIO 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 104"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 109"
+     },
+     {
+      "tip": "ders",
+      "kod": "ESC 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 282"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "BIO 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "PRED 310"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 351"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 320"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 360"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 348"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 342"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 370"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "ED 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 404"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 450"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 301"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 462"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Seçmeli",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "Program 4 Ağustos 2021 Senato kararıyla güncellendi.",
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "CET": {
+  "ad": "Computer Education and Educational Technology",
+  "kaynak": "https://cet.bogazici.edu.tr/undergraduate-program",
+  "guncelYil": 2026,
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 101",
+       "AE 111"
+      ]
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 111"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "MATH 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 101"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "kodlar": [
+       "AE 102",
+       "AE 112"
+      ]
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 150"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Şunlardan biri",
+      "kodlar": [
+       "MATH 201",
+       "MATH 102"
+      ],
+      "ipucu": "Bu dönem birini seç"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 102"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 215"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "CMPE 210"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 211"
+     },
+     {
+      "tip": "ders",
+      "kod": "PHYS 201"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 221"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 224"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 282"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 102"
+     },
+     {
+      "tip": "ders",
+      "kod": "CHEM 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "TK 222"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 321"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 341"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 221"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "SCED 370"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 314"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 322"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 372"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 7,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 401"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 431"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 441"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 451"
+     },
+     {
+      "tip": "ders",
+      "kod": "ED 401"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   },
+   {
+    "no": 8,
+    "satirlar": [
+     {
+      "tip": "ders",
+      "kod": "CET 444"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 462"
+     },
+     {
+      "tip": "ders",
+      "kod": "CET 472"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Sınırsız Seçmeli",
+      "ipucu": "İstediğin alandan"
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "2021-22 öğretim yılı ve sonrasında başlayanlar için geçerli program.",
+   "2020-21 ve öncesi girişliler eski programdan sorumlu: 134 kredi / 245 AKTS. Farklar için bölümün 'Old Curriculum' sayfasına bakılır.",
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ]
+ },
+ "TR": {
+  "ad": "Translation and Interpreting Studies",
+  "kaynak": "transint.bogazici.edu.tr — Çeviribilim Lisans Ders Programı",
+  "not": "İlk üç yıl herkes aynı dersleri alır. Dördüncü yılda yazılı ya da sözlü çeviri alanında uzmanlaşırsın; sözlü çeviriye geçiş INT 202, INT 301 ve INT 318 derslerindeki başarına ve üçüncü yıl sonundaki sınava bağlıdır.",
+  "donemler": [
+   {
+    "no": 1,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Modern Dünyanın Oluşumu I ya da Kültürel Karşılaşmalar I",
+      "kodlar": [
+       "HIST 105",
+       "HUM 101"
+      ]
+     },
+     {
+      "tip": "secenek",
+      "ad": "İnsani Bilimler Seçmelisi",
+      "kodlar": [
+       "SOC 101",
+       "PSY 101",
+       "PHIL 101"
+      ]
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 109"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 111"
+     }
+    ]
+   },
+   {
+    "no": 2,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "secenek",
+      "ad": "Modern Dünyanın Oluşumu II ya da Kültürel Karşılaşmalar II",
+      "kodlar": [
+       "HIST 106",
+       "HUM 102"
+      ]
+     },
+     {
+      "tip": "ders",
+      "kod": "LING 101"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 106"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 108"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 110"
+     }
+    ]
+   },
+   {
+    "no": 3,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 105"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "TR kodlu derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 203"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 215"
+     }
+    ]
+   },
+   {
+    "no": 4,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Bilim Seçmelisi",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "ENGL 106"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "INT 202"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "TR kodlu derslerden"
+     }
+    ]
+   },
+   {
+    "no": 5,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 311"
+     },
+     {
+      "tip": "ders",
+      "kod": "INT 301"
+     },
+     {
+      "tip": "ders",
+      "kod": "POLS 101"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "TR kodlu derslerden"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 301"
+     }
+    ]
+   },
+   {
+    "no": 6,
+    "satirlar": [
+     {
+      "tip": "secmeli",
+      "ad": "Yabancı Dil Seçmelisi",
+      "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "İnsani Bilimler Seçmelisi (HSS)",
+      "ipucu": "Bölüm onayına tabidir"
+     },
+     {
+      "tip": "ders",
+      "kod": "HTR 312"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 314"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 316"
+     },
+     {
+      "tip": "ders",
+      "kod": "TR 318"
+     },
+     {
+      "tip": "secmeli",
+      "ad": "Bölüm Seçmelisi",
+      "ipucu": "TR / INT kodlu derslerden"
+     }
+    ]
+   }
+  ],
+  "uzmanlik": [
+   {
+    "ad": "Yazılı çeviri",
+    "donemler": [
+     {
+      "no": 7,
+      "satirlar": [
+       {
+        "tip": "secmeli",
+        "ad": "Yabancı Dil Seçmelisi",
+        "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "İnsani Bilimler Seçmelisi (HSS)",
+        "ipucu": "Bölüm onayına tabidir"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Bölüm Seçmelisi",
+        "ipucu": "TR kodlu derslerden",
+        "adet": 2
+       },
+       {
+        "tip": "ders",
+        "kod": "TR 401"
+       },
+       {
+        "tip": "ders",
+        "kod": "TR 427"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Sınırsız Seçmeli",
+        "ipucu": "İstediğin alandan"
+       }
+      ]
+     },
+     {
+      "no": 8,
+      "satirlar": [
+       {
+        "tip": "secmeli",
+        "ad": "Yabancı Dil Seçmelisi",
+        "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "İnsani Bilimler Seçmelisi (HSS)",
+        "ipucu": "Bölüm onayına tabidir"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Bölüm Seçmelisi",
+        "ipucu": "TR kodlu derslerden",
+        "adet": 2
+       },
+       {
+        "tip": "ders",
+        "kod": "TR 428"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Sınırsız Seçmeli",
+        "ipucu": "İstediğin alandan"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "ad": "Sözlü çeviri",
+    "donemler": [
+     {
+      "no": 7,
+      "satirlar": [
+       {
+        "tip": "secmeli",
+        "ad": "Yabancı Dil Seçmelisi",
+        "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 415"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 417"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 419"
+       },
+       {
+        "tip": "ders",
+        "kod": "TR 401"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Sınırsız Seçmeli",
+        "ipucu": "İstediğin alandan",
+        "adet": 2
+       }
+      ]
+     },
+     {
+      "no": 8,
+      "satirlar": [
+       {
+        "tip": "secmeli",
+        "ad": "Yabancı Dil Seçmelisi",
+        "ipucu": "FR / SPA / GER / JP · toplam 24 kredi"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 412"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 416"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 418"
+       },
+       {
+        "tip": "ders",
+        "kod": "INT 420"
+       },
+       {
+        "tip": "secmeli",
+        "ad": "Sınırsız Seçmeli",
+        "ipucu": "İstediğin alandan"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "notlar": [
+   "HIST 105, HIST 106, HUM 101 ve HUM 102 derslerinden ikisi alınmalı.",
+   "Yabancı dil: İngilizce ve Türkçe dışındaki tek bir dilde (FR/SPA/GER/JP) toplam 24 kredi tamamlanır.",
+   "Bilim, HSS ve bölüm seçmelileri bölüm onayına tabidir.",
+   "Bağlayıcı olan, Boğaziçi Lisans Programları Kataloğundaki resmî programdır."
+  ],
+  "guncelYil": 2026
+ }
+}

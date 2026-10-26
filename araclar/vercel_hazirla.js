@@ -1,11 +1,12 @@
-/* Vercel'deki statik yayın için: sayfaları ve halka açık verileri public/ altında toplar.
+/* Yayına hazır statik klasör üretir: docs/
    Site kodu site/sayfalar, veri site/veri içinde durur; ikisi ayrı yerde olduğu için
-   yayına hazır tek klasör üretiyoruz. Kişisel veriler (hesaplar, notlar) kopyalanmaz. */
+   tek klasörde topluyoruz. Kişisel veriler (hesaplar, notlar) kopyalanmaz.
+   Aynı klasör hem Vercel'e hem GitHub Pages'e yayınlanır. */
 const fs = require("fs");
 const path = require("path");
 
 const kok = path.join(__dirname, "..");
-const cikti = path.join(kok, "public");
+const cikti = path.join(kok, "docs");
 
 fs.rmSync(cikti, { recursive: true, force: true });
 fs.cpSync(path.join(kok, "site", "sayfalar"), cikti, { recursive: true });
@@ -18,4 +19,7 @@ for (const ad of ["dersler.json", "mufredat.json"]) {
   );
 }
 
-console.log("public/ hazır: sayfalar + dersler.json + mufredat.json");
+// GitHub Pages'in Jekyll işleyicisini kapatır (dosyalar olduğu gibi yayınlansın).
+fs.writeFileSync(path.join(cikti, ".nojekyll"), "");
+
+console.log("docs/ hazır: sayfalar + dersler.json + mufredat.json");

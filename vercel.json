@@ -1,4 +1,4 @@
 {
   "buildCommand": "node araclar/vercel_hazirla.js",
-  "outputDirectory": "public"
+  "outputDirectory": "docs"
 }
