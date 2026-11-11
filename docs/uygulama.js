@@ -1390,9 +1390,10 @@ $("#giris-form").addEventListener("submit", async (e) => {
     /* Deneme modunda hesap yalnızca bu tarayıcıda tutulur: kullanıcı başka bir
        tarayıcıda/cihazda hesap açmışsa burada "hesap yok" hatası alır. Onu
        uğraştırmamak için yazdığı e-posta ve şifre korunarak kayıt formuna geç. */
-    if (D.demo && girisModu === "giris" && /böyle bir hesap yok/i.test(metin)) {
+    const hesapYok = /böyle bir hesap yok|bu e-postayla hesap yok/i.test(metin);
+    if (D.demo && hesapYok && girisModu !== "kayit") {
       const eposta = $("#giris-eposta").value.trim();
-      const sifre = $("#giris-sifre").value;
+      const sifre = girisModu === "sifirla" ? $("#giris-yeni-sifre").value : $("#giris-sifre").value;
       girisAc("kayit");
       $("#giris-eposta").value = eposta;
       $("#giris-sifre").value = sifre;
