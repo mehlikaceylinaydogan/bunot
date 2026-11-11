@@ -622,10 +622,7 @@ function hesapYaz() {
        <button class="dugme kucuk hesap-dugme kaydedilenler-dugme" data-kaydedilenler>Kaydettiklerim${k.kayitSayisi ? ` (${k.kayitSayisi})` : ""}</button>
        <button class="dugme kucuk yukle-dugme" data-yukle><span>Not yükle</span></button>
        <button class="dugme kucuk hesap-dugme cikis-dugme" id="cikis" title="Çıkış yap">Çıkış</button>`
-    : D.demo
-      ? `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>
-         <a class="dugme kucuk" href="https://github.com/mehlikaceylinaydogan/bunot" target="_blank" rel="noopener">GitHub</a>`
-      : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
+    : `<button class="dugme kucuk giris-dugme" data-giris>Giriş yap</button>`;
 
 }
 
