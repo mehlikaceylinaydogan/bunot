@@ -1386,7 +1386,21 @@ $("#giris-form").addEventListener("submit", async (e) => {
     }
     api("sayilar").then((s) => { D.sayilar = s; }).catch(() => {});
   } catch (hata) {
-    uyari.textContent = hata.message;
+    const metin = hata.message || "";
+    /* Deneme modunda hesap yalnızca bu tarayıcıda tutulur: kullanıcı başka bir
+       tarayıcıda/cihazda hesap açmışsa burada "hesap yok" hatası alır. Onu
+       uğraştırmamak için yazdığı e-posta ve şifre korunarak kayıt formuna geç. */
+    if (D.demo && girisModu === "giris" && /böyle bir hesap yok/i.test(metin)) {
+      const eposta = $("#giris-eposta").value.trim();
+      const sifre = $("#giris-sifre").value;
+      girisAc("kayit");
+      $("#giris-eposta").value = eposta;
+      $("#giris-sifre").value = sifre;
+      uyari.textContent = "Bu tarayıcıda henüz hesabın yok. Adını yaz, bölümünü ve giriş yılını seç; yazdığın şifreyle hesabın burada açılır.";
+      uyari.classList.add("gorunur");
+      return;
+    }
+    uyari.textContent = metin;
     uyari.classList.add("gorunur");
   } finally {
     dugme.disabled = false;
